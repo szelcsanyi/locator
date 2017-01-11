@@ -37,7 +37,7 @@ class Library implements Contract\Library
      * Default configuration settings.
      * @var array ['legend'] : array : Legend used to create the map, ie. what to call each of the array keys (in order)
      * @var array ['aliases'] : array : Alias to the legend as methods $environment->in('staging'); $environment->is('domain.com.au');
-     * @var array ['driver'] : string|object : The driver which will compare our value to see if it is a match
+     * @var array ['driver'] : s108tring|object : The driver which will compare our value to see if it is a match
      */
     private $config = [
         'legend'    => ['server', 'type', 'domain'],
@@ -105,7 +105,7 @@ class Library implements Contract\Library
      *
      * @return \stdClass of the result, with correct map assigned or false if it doesn't exist
      */
-    public function resolve($subject) :  \stdClass
+    public function resolve($subject)//  :  \stdClass
     {
         // Reset the status to false, as we are about the parse a new value
         $this->status = false;
