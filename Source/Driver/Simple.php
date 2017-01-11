@@ -26,7 +26,7 @@ class Simple implements \Hive\Locator\Contract\Driver
      *
      * @return bool whether or not the string was found
      */
-    public function compare($examine, $subject) : bool
+    public function compare($examine, $subject)// : bool
     {
         return trim(strtolower($examine)) == trim(strtolower($subject));
     }

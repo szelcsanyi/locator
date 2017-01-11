@@ -26,7 +26,7 @@ class Domain implements \Hive\Locator\Contract\Driver
      *
      * @return bool whether or not the two arguments are strictly equal
      */
-    public function compare($examine, $subject) : bool
+    public function compare($examine, $subject)// : bool
     {
         return $this->domain($examine) == $this->domain($subject);
     }
@@ -41,7 +41,7 @@ class Domain implements \Hive\Locator\Contract\Driver
      *
      * @return string cleaned domain
      */
-    private function domain ($domain) : string
+    private function domain ($domain)// : string
     {
 
         // Clean the domain

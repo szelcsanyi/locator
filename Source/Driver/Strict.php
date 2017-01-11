@@ -25,7 +25,7 @@ class Strict implements \Hive\Locator\Contract\Driver
      *
      * @return bool whether or not the two arguments are strictly equal
      */
-    public function compare($examine, $subject) : bool
+    public function compare($examine, $subject)// : bool
     {
         return $examine == $subject;
     }
