@@ -22,5 +22,5 @@ interface Library
      *
      * @return \stdClass a object of the subjects legend values.
      */
-    public function resolve($subject): \stdClass;
+    public function resolve($subject);//: \stdClass;
 }
