@@ -45,7 +45,8 @@ class Object extends Library implements Contract\Object
      * @param array $map
      * @param array $config
      */
-    public function __construct(array $map, array $config = []) {
+    public function __construct(array $map, array $config = [])
+    {
 
         // Merge the received config with the defaults
         $config = array_merge($this->config, $config);
@@ -180,7 +181,7 @@ class Object extends Library implements Contract\Object
      * @throws Exception\UndefinedMapping
      * @throws Exception\UnresolvedLegend
      */
-    public function get() : \stdClass
+    public function get() // : \stdClass
     {
 
         // Make sure we have a result
