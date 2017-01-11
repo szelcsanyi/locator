@@ -15,5 +15,5 @@
  */
 interface Driver
 {
-    public function compare($subject, $examine) : bool;
+    public function compare($subject, $examine);// : bool;
 }
