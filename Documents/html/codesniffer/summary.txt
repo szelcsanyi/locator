@@ -1,0 +1,24 @@
+
+PHP CODE SNIFFER REPORT SUMMARY
+-------------------------------------------------------------------------------------------------------------
+FILE                                                                                         ERRORS  WARNINGS
+-------------------------------------------------------------------------------------------------------------
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php                 1       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Library.php                1       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Domain.php                   8       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Expression.php               2       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Simple.php                   3       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Strict.php                   2       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/BadMethodCall.php         1       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedMapping.php      2       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedProperty.php     2       0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Instance.php                        20      0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php                         21      0
+/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Object.php                          32      0
+-------------------------------------------------------------------------------------------------------------
+A TOTAL OF 95 ERRORS AND 0 WARNINGS WERE FOUND IN 20 FILES
+-------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX 93 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------
+
+

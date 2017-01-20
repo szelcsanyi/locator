@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/usr/local/zend/var/apps/http/vendor/hive/locator/Source">
+  <namespace name="Hive\Locator\Contract">
+    
+    <interface name="Instance" src="Contract/Instance.php" description="Instance Interface." xml="interfaces/Hive_Locator_Contract_Instance.xml"/>
+    
+    <interface name="Object" src="Contract/Object.php" description="Object Interface." xml="interfaces/Hive_Locator_Contract_Object.xml"/>
+  <interface name="Library" src="Contract/Library.php" description="Library Interface." xml="interfaces/Hive_Locator_Contract_Library.xml"/><interface name="Driver" src="Contract/Driver.php" description="Instance Interface." xml="interfaces/Hive_Locator_Contract_Driver.xml"/></namespace>
+  <namespace name="Hive\Locator\Driver">
+    
+    
+    
+    
+  <class name="Domain" src="Driver/Domain.php" description="Domain  Locator Library Driver." xml="classes/Hive_Locator_Driver_Domain.xml"/><class name="Expression" src="Driver/Expression.php" description="Regular Expression Locator Library Driver." xml="classes/Hive_Locator_Driver_Expression.xml"/><class name="Simple" src="Driver/Simple.php" description="Simple Locator Library Driver." xml="classes/Hive_Locator_Driver_Simple.xml"/><class name="Strict" src="Driver/Strict.php" description="Strict Locator Library Driver." xml="classes/Hive_Locator_Driver_Strict.xml"/></namespace>
+  <namespace name="Hive\Locator\Exception">
+    <class name="BadMethodCall" src="Exception/BadMethodCall.php" description="Bad Method Call Exception." xml="classes/Hive_Locator_Exception_BadMethodCall.xml"/>
+    <class name="IncompleteLegend" src="Exception/IncompleteLegend.php" description="Incomplete Legend Exception." xml="classes/Hive_Locator_Exception_IncompleteLegend.xml"/>
+    <class name="InstanceDoesNotExist" src="Exception/InstanceDoesNotExist.php" description="Instance Does Not Exist Exception." xml="classes/Hive_Locator_Exception_InstanceDoesNotExist.xml"/>
+    <class name="InstanceExists" src="Exception/InstanceExists.php" description="Instance Exists Exception." xml="classes/Hive_Locator_Exception_InstanceExists.xml"/>
+    <class name="InvalidDriver" src="Exception/InvalidDriver.php" description="Invalid Driver Exception." xml="classes/Hive_Locator_Exception_InvalidDriver.xml"/>
+    <class name="UndefinedMapping" src="Exception/UndefinedMapping.php" description="Undefined Mapping Exception." xml="classes/Hive_Locator_Exception_UndefinedMapping.xml"/>
+    <class name="UndefinedProperty" src="Exception/UndefinedProperty.php" description="Undefined Property Exception." xml="classes/Hive_Locator_Exception_UndefinedProperty.xml"/>
+    <class name="UnresolvedLegend" src="Exception/UnresolvedLegend.php" description="Invalid Driver Exception." xml="classes/Hive_Locator_Exception_UnresolvedLegend.xml"/>
+  </namespace>
+  <namespace name="Hive\Locator">
+    <class name="Exception" src="Exception.php" description="General Exception Handler." xml="classes/Hive_Locator_Exception.xml"/>
+    <class name="Instance" src="Instance.php" description="Locator Instance." xml="classes/Hive_Locator_Instance.xml"/>
+    
+    
+  <class name="Library" src="Library.php" description="Locator Library." xml="classes/Hive_Locator_Library.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Locator_Object.xml"/></namespace>
+  <namespace name="">
+    <class name="Exception" xml="classes/Exception.xml"/>
+  </namespace>
+</index>

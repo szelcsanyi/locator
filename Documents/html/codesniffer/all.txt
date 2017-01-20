@@ -1,0 +1,378 @@
+
+PHP CODE SNIFFER INFORMATION REPORT
+----------------------------------------------------------------------
+CamelCase class name: yes [20/20, 100%]
+
+CamelCase method name: yes [13/13, 100%]
+
+Class defined in namespace: yes [20/20, 100%]
+
+Class opening brace placement: new line [20/20, 100%]
+
+Constant name case: upper [19/19, 100%]
+
+Control structure defined inline: no [33/33, 100%]
+
+Declarations and side effects mixed: no [20/20, 100%]
+
+EOL char: \n [20/20, 100%]
+
+Function opening brace placement: new line [23/26, 88.46%]
+	same line => 3 (11.54%)
+
+Line indent: spaces [596/596, 100%]
+
+Line length: 80 or less [892/948, 94.09%]
+	81-120 => 48 (5.06%)
+	121-150 => 8 (0.84%)
+
+Multiple statements on same line: no [133/133, 100%]
+
+Number of newlines at EOF: 0 [10/20, 50%]
+	1 => 9 (45%)
+	14 => 1 (5%)
+
+One class per file: yes [20/20, 100%]
+
+PHP closing tag at end of PHP-only file: no [20/20, 100%]
+
+PHP constant case: lower [14/14, 100%]
+
+PHP keyword case: lower [239/239, 100%]
+
+PHP short open tag used: no [20/20, 100%]
+
+Spaces after control structure open parenthesis: 0 [24/24, 100%]
+
+Spaces before control structure close parenthesis: 0 [22/24, 91.67%]
+	2 => 1 (4.17%)
+	1 => 1 (4.17%)
+
+Use of ELSE IF or ELSEIF: elseif [1/1, 100%]
+
+----------------------------------------------------------------------
+Time: 379ms; Memory: 7.75Mb
+
+
+FILE: ...end/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 19 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...nd/var/apps/http/vendor/hive/locator/Source/Contract/Library.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../zend/var/apps/http/vendor/hive/locator/Source/Driver/Domain.php
+----------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  1 | ERROR | [x] There must be one blank line after the namespace
+    |       |     declaration
+ 44 | ERROR | [ ] Expected "function abc(...)"; found "function abc
+    |       |     (...)"
+ 44 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1
+    |       |     found
+ 51 | ERROR | [x] No space found after comma in function call
+ 51 | ERROR | [x] Space found before comma in function call
+ 51 | ERROR | [x] No space found after comma in function call
+ 55 | ERROR | [x] Expected 1 blank line at end of file; 14 found
+ 55 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...d/var/apps/http/vendor/hive/locator/Source/Driver/Expression.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 34 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 34 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../zend/var/apps/http/vendor/hive/locator/Source/Driver/Simple.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  1 | ERROR | [x] There must be one blank line after the namespace
+    |       |     declaration
+ 34 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 34 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../zend/var/apps/http/vendor/hive/locator/Source/Driver/Strict.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 33 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 33 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...apps/http/vendor/hive/locator/Source/Exception/BadMethodCall.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 44 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...s/http/vendor/hive/locator/Source/Exception/IncompleteLegend.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | WARNING | Line exceeds 120 characters; contains 141 characters
+----------------------------------------------------------------------
+
+
+FILE: ...pps/http/vendor/hive/locator/Source/Exception/InstanceExists.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | WARNING | Line exceeds 120 characters; contains 121 characters
+----------------------------------------------------------------------
+
+
+FILE: ...apps/http/vendor/hive/locator/Source/Exception/InvalidDriver.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | WARNING | Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------
+
+
+FILE: ...s/http/vendor/hive/locator/Source/Exception/UndefinedMapping.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 48 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 48 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../http/vendor/hive/locator/Source/Exception/UndefinedProperty.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 48 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 48 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...local/zend/var/apps/http/vendor/hive/locator/Source/Instance.php
+----------------------------------------------------------------------
+FOUND 20 ERRORS AFFECTING 16 LINES
+----------------------------------------------------------------------
+ 22 | ERROR | [x] Opening brace should be on a new line
+ 24 | ERROR | [x] Expected 1 space after IF keyword; 0 found
+ 24 | ERROR | [x] Blank line found at start of control structure
+ 28 | ERROR | [x] Blank line found at end of control structure
+ 29 | ERROR | [x] Blank line found at start of control structure
+ 43 | ERROR | [x] Opening brace should be on a new line
+ 45 | ERROR | [x] Expected 1 space after IF keyword; 0 found
+ 45 | ERROR | [x] Blank line found at start of control structure
+ 48 | ERROR | [x] Blank line found at end of control structure
+ 49 | ERROR | [x] Blank line found at start of control structure
+ 52 | ERROR | [x] Blank line found at end of control structure
+ 65 | ERROR | [ ] Expected "function abc(...)"; found "function abc
+    |       |     (...)"
+ 65 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1
+    |       |     found
+ 68 | ERROR | [x] Expected 1 space after IF keyword; 0 found
+ 68 | ERROR | [x] Blank line found at start of control structure
+ 72 | ERROR | [x] Blank line found at end of control structure
+ 73 | ERROR | [x] Blank line found at start of control structure
+ 76 | ERROR | [x] Blank line found at end of control structure
+ 89 | ERROR | [x] Opening brace should be on a new line
+ 95 | ERROR | [x] The closing brace for the class must go on the next
+    |       |     line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 19 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../local/zend/var/apps/http/vendor/hive/locator/Source/Library.php
+----------------------------------------------------------------------
+FOUND 21 ERRORS AND 1 WARNING AFFECTING 17 LINES
+----------------------------------------------------------------------
+   1 | ERROR   | [x] There must be one blank line after the namespace
+     |         |     declaration
+  39 | WARNING | [ ] Line exceeds 120 characters; contains 134
+     |         |     characters
+  51 | ERROR   | [x] Scope keyword "public" must be followed by a
+     |         |     single space
+  95 | ERROR   | [x] Expected 0 spaces before closing bracket; 1
+     |         |     found
+  95 | ERROR   | [x] Expected 0 spaces before closing bracket; 2
+     |         |     found
+  95 | ERROR   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 2
+  95 | ERROR   | [x] Blank line found at start of control structure
+ 117 | ERROR   | [x] Blank line found at start of control structure
+ 121 | ERROR   | [x] Blank line found at end of control structure
+ 122 | ERROR   | [x] Blank line found at start of control structure
+ 144 | ERROR   | [x] Expected 1 space between comma and type hint
+     |         |     "int"; 2 found
+ 151 | ERROR   | [x] Expected 0 spaces before closing bracket; 1
+     |         |     found
+ 151 | ERROR   | [x] Blank line found at start of control structure
+ 154 | ERROR   | [x] Blank line found at start of control structure
+ 157 | ERROR   | [x] Blank line found at start of control structure
+ 163 | ERROR   | [x] Blank line found at end of control structure
+ 164 | ERROR   | [x] Blank line found at start of control structure
+ 174 | ERROR   | [x] Blank line found at end of control structure
+ 175 | ERROR   | [x] Blank line found at start of control structure
+ 179 | ERROR   | [x] Blank line found at end of control structure
+ 186 | ERROR   | [x] Expected 1 newline at end of file; 0 found
+ 186 | ERROR   | [x] The closing brace for the class must go on the
+     |         |     next line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 21 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...r/local/zend/var/apps/http/vendor/hive/locator/Source/Object.php
+----------------------------------------------------------------------
+FOUND 32 ERRORS AND 4 WARNINGS AFFECTING 35 LINES
+----------------------------------------------------------------------
+   7 | WARNING | [ ] Line exceeds 120 characters; contains 121
+     |         |     characters
+  25 | WARNING | [ ] Line exceeds 120 characters; contains 134
+     |         |     characters
+  28 | WARNING | [ ] Line exceeds 120 characters; contains 129
+     |         |     characters
+  71 | ERROR   | [x] Blank line found at start of control structure
+  77 | ERROR   | [x] Blank line found at end of control structure
+  81 | ERROR   | [x] Expected 1 space after comma in function call; 2
+     |         |     found
+ 104 | ERROR   | [x] Blank line found at start of control structure
+ 107 | ERROR   | [x] Blank line found at start of control structure
+ 110 | ERROR   | [x] Blank line found at start of control structure
+ 113 | ERROR   | [x] Blank line found at end of control structure
+ 118 | ERROR   | [x] Blank line found at end of control structure
+ 122 | ERROR   | [x] Expected 1 space after comma in function call; 2
+     |         |     found
+ 139 | ERROR   | [x] Blank line found at start of control structure
+ 142 | ERROR   | [x] Blank line found at start of control structure
+ 145 | ERROR   | [x] Blank line found at end of control structure
+ 149 | ERROR   | [x] Blank line found at start of control structure
+ 152 | ERROR   | [x] Blank line found at end of control structure
+ 156 | ERROR   | [x] Blank line found at start of control structure
+ 164 | ERROR   | [x] Blank line found at end of control structure
+ 165 | ERROR   | [x] Blank line found at start of control structure
+ 169 | ERROR   | [x] Blank line found at end of control structure
+ 178 | WARNING | [ ] Line exceeds 120 characters; contains 129
+     |         |     characters
+ 188 | ERROR   | [x] Blank line found at start of control structure
+ 200 | ERROR   | [x] Blank line found at start of control structure
+ 202 | ERROR   | [x] Blank line found at start of control structure
+ 205 | ERROR   | [x] Blank line found at start of control structure
+ 209 | ERROR   | [x] Blank line found at end of control structure
+ 210 | ERROR   | [x] Blank line found at start of control structure
+ 215 | ERROR   | [x] Blank line found at end of control structure
+ 216 | ERROR   | [x] Blank line found at start of control structure
+ 222 | ERROR   | [x] Blank line found at end of control structure
+ 230 | ERROR   | [x] Blank line found at end of control structure
+ 231 | ERROR   | [x] Blank line found at start of control structure
+ 235 | ERROR   | [x] Blank line found at end of control structure
+ 240 | ERROR   | [x] Expected 1 newline at end of file; 0 found
+ 240 | ERROR   | [x] The closing brace for the class must go on the
+     |         |     next line after the body
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 32 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+Time: 380ms; Memory: 7.75Mb
+
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+----------------------------------------------------------------------
+    STANDARD  CATEGORY            SNIFF                          COUNT
+----------------------------------------------------------------------
+[x] Squiz     White space         Control structure spacing spa  30
+[x] Squiz     White space         Control structure spacing spa  21
+[x] PSR2      Files               End file newline none found    10
+[x] PSR2      Classes             Class declaration close brace  9
+[ ] Generic   Files               Line length too long           8
+[x] Squiz     Functions           Multi line function declarati  3
+[x] Squiz     Control structures  Control signature space after  3
+[x] PSR2      Namespaces          Namespace declaration blank l  3
+[x] Squiz     Functions           Multi line function declarati  2
+[x] PSR2      Control structures  Control structure spacing spa  2
+[x] Generic   Functions           Function call argument spacin  2
+[x] Generic   Functions           Function call argument spacin  2
+[ ] Squiz     Functions           Function declaration           2
+[x] Squiz     White space         Scope keyword spacing incorre  1
+[x] Squiz     Functions           Function declaration argument  1
+[x] Squiz     Control structures  Control signature space after  1
+[x] PSR2      Methods             Function call signature space  1
+[x] PSR2      Files               End file newline too many      1
+[x] Generic   Functions           Function call argument spacin  1
+----------------------------------------------------------------------
+A TOTAL OF 103 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 17 MARKED SOURCES AUTOMATICALLY (93 VIOLATIONS IN TOTAL)
+----------------------------------------------------------------------
+
+Time: 387ms; Memory: 7.75Mb
+
+
+PHP CODE SNIFFER REPORT SUMMARY
+----------------------------------------------------------------------
+FILE                                                  ERRORS  WARNINGS
+----------------------------------------------------------------------
+...tp/vendor/hive/locator/Source/Contract/Driver.php  1       0
+...p/vendor/hive/locator/Source/Contract/Library.php  1       0
+...http/vendor/hive/locator/Source/Driver/Domain.php  8       0
+.../vendor/hive/locator/Source/Driver/Expression.php  2       0
+...http/vendor/hive/locator/Source/Driver/Simple.php  3       0
+...http/vendor/hive/locator/Source/Driver/Strict.php  2       0
+...r/hive/locator/Source/Exception/BadMethodCall.php  1       0
+...ive/locator/Source/Exception/IncompleteLegend.php  0       1
+.../hive/locator/Source/Exception/InstanceExists.php  0       1
+...r/hive/locator/Source/Exception/InvalidDriver.php  0       1
+...ive/locator/Source/Exception/UndefinedMapping.php  2       0
+...ve/locator/Source/Exception/UndefinedProperty.php  2       0
+...apps/http/vendor/hive/locator/Source/Instance.php  20      0
+.../apps/http/vendor/hive/locator/Source/Library.php  21      1
+...r/apps/http/vendor/hive/locator/Source/Object.php  32      4
+----------------------------------------------------------------------
+A TOTAL OF 95 ERRORS AND 8 WARNINGS WERE FOUND IN 20 FILES
+----------------------------------------------------------------------
+PHPCBF CAN FIX 93 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+Time: 387ms; Memory: 7.75Mb
+
