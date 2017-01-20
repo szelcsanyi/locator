@@ -1,28 +1,28 @@
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php
-----------------------------------------------------------------------------------
+FILE: ...sr/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php
+--------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  19 | ERROR | [x] Expected 1 newline at end of file; 0 found
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Library.php
------------------------------------------------------------------------------------
+FILE: ...r/local/zend/var/apps/http/vendor/hive/locator/Source/Contract/Library.php
+--------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  26 | ERROR | [x] Expected 1 newline at end of file; 0 found
------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Domain.php
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 8 ERRORS AFFECTING 4 LINES
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
   1 | ERROR | [x] There must be one blank line after the namespace declaration
  44 | ERROR | [ ] Expected "function abc(...)"; found "function abc (...)"
  44 | ERROR | [x] Expected 0 spaces before opening parenthesis; 1 found
@@ -30,82 +30,88 @@ FOUND 8 ERRORS AFFECTING 4 LINES
  51 | ERROR | [x] Space found before comma in function call
  51 | ERROR | [x] No space found after comma in function call
  55 | ERROR | [x] Expected 1 blank line at end of file; 14 found
- 55 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
+ 55 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Expression.php
-------------------------------------------------------------------------------------------
+FILE: .../local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Expression.php
+--------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  34 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 34 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
+ 34 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Simple.php
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
   1 | ERROR | [x] There must be one blank line after the namespace declaration
  34 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 34 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
+ 34 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Driver/Strict.php
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  33 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 33 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
+ 33 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/BadMethodCall.php
-------------------------------------------------------------------------------------------
+FILE: .../zend/var/apps/http/vendor/hive/locator/Source/Exception/BadMethodCall.php
+--------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  44 | ERROR | [x] Expected 1 newline at end of file; 0 found
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedMapping.php
----------------------------------------------------------------------------------------------
+FILE: ...nd/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedMapping.php
+--------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  48 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 48 | ERROR | [x] The closing brace for the class must go on the next line after the body
----------------------------------------------------------------------------------------------
+ 48 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
-FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedProperty.php
-----------------------------------------------------------------------------------------------
+FILE: ...d/var/apps/http/vendor/hive/locator/Source/Exception/UndefinedProperty.php
+--------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  48 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 48 | ERROR | [x] The closing brace for the class must go on the next line after the body
-----------------------------------------------------------------------------------------------
+ 48 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Instance.php
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 20 ERRORS AFFECTING 16 LINES
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
  22 | ERROR | [x] Opening brace should be on a new line
  24 | ERROR | [x] Expected 1 space after IF keyword; 0 found
  24 | ERROR | [x] Blank line found at start of control structure
@@ -125,16 +131,17 @@ FOUND 20 ERRORS AFFECTING 16 LINES
  73 | ERROR | [x] Blank line found at start of control structure
  76 | ERROR | [x] Blank line found at end of control structure
  89 | ERROR | [x] Opening brace should be on a new line
- 95 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
+ 95 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 19 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 21 ERRORS AFFECTING 16 LINES
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
    1 | ERROR | [x] There must be one blank line after the namespace declaration
   51 | ERROR | [x] Scope keyword "public" must be followed by a single space
   95 | ERROR | [x] Expected 0 spaces before closing bracket; 1 found
@@ -155,16 +162,17 @@ FOUND 21 ERRORS AFFECTING 16 LINES
  175 | ERROR | [x] Blank line found at start of control structure
  179 | ERROR | [x] Blank line found at end of control structure
  186 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 186 | ERROR | [x] The closing brace for the class must go on the next line after the body
--------------------------------------------------------------------------------------------
+ 186 | ERROR | [x] The closing brace for the class must go on the next line
+     |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 21 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 FILE: /usr/local/zend/var/apps/http/vendor/hive/locator/Source/Object.php
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 FOUND 32 ERRORS AFFECTING 31 LINES
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
   71 | ERROR | [x] Blank line found at start of control structure
   77 | ERROR | [x] Blank line found at end of control structure
   81 | ERROR | [x] Expected 1 space after comma in function call; 2 found
@@ -196,9 +204,10 @@ FOUND 32 ERRORS AFFECTING 31 LINES
  231 | ERROR | [x] Blank line found at start of control structure
  235 | ERROR | [x] Blank line found at end of control structure
  240 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 240 | ERROR | [x] The closing brace for the class must go on the next line after the body
--------------------------------------------------------------------------------------------
+ 240 | ERROR | [x] The closing brace for the class must go on the next line
+     |       |     after the body
+--------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 32 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
