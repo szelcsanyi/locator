@@ -51,7 +51,7 @@ Spaces before control structure close parenthesis: 0 [22/24, 91.67%]
 Use of ELSE IF or ELSEIF: elseif [1/1, 100%]
 
 ----------------------------------------------------------------------
-Time: 381ms; Memory: 7.75Mb
+Time: 364ms; Memory: 7.75Mb
 
 
 FILE: ...end/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php
@@ -314,7 +314,7 @@ FOUND 32 ERRORS AND 4 WARNINGS AFFECTING 35 LINES
 PHPCBF CAN FIX THE 32 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 381ms; Memory: 7.75Mb
+Time: 365ms; Memory: 7.75Mb
 
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
@@ -346,7 +346,7 @@ A TOTAL OF 103 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
 PHPCBF CAN FIX THE 17 MARKED SOURCES AUTOMATICALLY (93 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 382ms; Memory: 7.75Mb
+Time: 371ms; Memory: 7.75Mb
 
 
 PHP CODE SNIFFER REPORT SUMMARY
@@ -374,5 +374,5 @@ A TOTAL OF 95 ERRORS AND 8 WARNINGS WERE FOUND IN 20 FILES
 PHPCBF CAN FIX 93 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 382ms; Memory: 7.75Mb
+Time: 371ms; Memory: 7.75Mb
 
