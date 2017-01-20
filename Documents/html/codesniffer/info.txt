@@ -38,7 +38,7 @@ PHP closing tag at end of PHP-only file: no [20/20, 100%]
 
 PHP constant case: lower [14/14, 100%]
 
-PHP keyword case: lower [239/239, 100%]
+PHP keyword case: lower [238/238, 100%]
 
 PHP short open tag used: no [20/20, 100%]
 

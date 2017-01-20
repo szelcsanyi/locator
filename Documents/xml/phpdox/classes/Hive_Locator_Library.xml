@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Library" namespace="Hive\Locator" name="Library" abstract="false" final="false" start="20" end="186">
-  <file path="/usr/local/zend/var/apps/http/vendor/hive/locator/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" size="5574" time="2017-01-11T19:23:20+11:00" unixtime="1484123000" sha1="4dd6fa5b38baf07e367c62b8de7746363ef46adf" relative="Library.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor/hive/locator/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" size="5567" time="2017-01-20T23:59:19+11:00" unixtime="1484917159" sha1="484e5dad5f2232a4687f9181123df9a00779f36b" relative="Library.php"/>
   <docblock>
     <description compact="Locator Library.">The actual Locator library, which does the core operations.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -10,7 +10,7 @@
     <copyright value="(c) 2017 Jamie Peake"/>
   </docblock>
   <implements full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library"/>
-  <constant type="{unknown}" name="DRIVER_CONTRACT" value="'Hive\Locator\Contract\Driver'">
+  <constant type="string" name="DRIVER_CONTRACT" value="'Hive\Locator\Contract\Driver'">
     <docblock>
       <description compact="Contract which a driver must implement. (Magic Value)"/>
     </docblock>
@@ -104,10 +104,8 @@
         <type full="Hive\Locator\bool" namespace="Hive\Locator" name="bool"/>
       </return>
     </docblock>
-    <parameter name="data" byreference="false" type="array"/>
-    <parameter name="depth" byreference="false" type="integer" default="0">
-      <type full="Hive\Locator\int" namespace="Hive\Locator" name="int"/>
-    </parameter>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="depth" byreference="false" type="integer" default="0"/>
     <inline>
       <comment value="Assign the current alias and increment depth" line="147"/>
       <comment value="Gigo check, ensure that there is an alias for the map." line="150"/>
@@ -126,7 +124,4 @@
     <parameter name="subject" byreference="false" type="{unknown}"/>
   </method>
   </interface>
-  <extenders>
-    <extender full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
-  </extenders>
 </class>

@@ -27,7 +27,7 @@
     <class name="Instance" src="Instance.php" description="Locator Instance." xml="classes/Hive_Locator_Instance.xml"/>
     
     
-  <class name="Library" src="Library.php" description="Locator Library." xml="classes/Hive_Locator_Library.xml"/><class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Locator_Object.xml"/></namespace>
+  <class name="Object" src="Object.php" description="Object Library." xml="classes/Hive_Locator_Object.xml"/><class name="Library" src="Library.php" description="Locator Library." xml="classes/Hive_Locator_Library.xml"/></namespace>
   <namespace name="">
     <class name="Exception" xml="classes/Exception.xml"/>
   </namespace>

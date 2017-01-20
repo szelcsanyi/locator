@@ -19,4 +19,4 @@
     </docblock>
     <parameter name="subject" byreference="false" type="{unknown}"/>
   </method>
-<implementors><class full="Hive\Locator\Library" namespace="Hive\Locator" name="Library"/><class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/></implementors></interface>
+<implementors><class full="Hive\Locator\Library" namespace="Hive\Locator" name="Library"/><class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/><class full="Hive\Locator\Library" namespace="Hive\Locator" name="Library"/></implementors></interface>

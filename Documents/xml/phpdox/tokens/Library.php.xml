@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/locator/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" size="5574" time="2017-01-11T19:23:20+11:00" unixtime="1484123000" sha1="4dd6fa5b38baf07e367c62b8de7746363ef46adf" relative="Library.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/usr/local/zend/var/apps/http/vendor/hive/locator/Build/../Source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" size="5567" time="2017-01-20T23:59:19+11:00" unixtime="1484917159" sha1="484e5dad5f2232a4687f9181123df9a00779f36b" relative="Library.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_NAMESPACE">namespace</token>
@@ -704,19 +704,17 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">parse</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_ARRAY">array</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$data</token>
     <token name="T_PHPDOX_COMMA">,</token>
-    <token name="T_WHITESPACE">  </token>
-    <token name="T_STRING">int</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_WHITESPACE">   </token>
     <token name="T_VARIABLE">$depth</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_LNUMBER">0</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_COMMENT">// : bool</token>
   </line>
   <line no="145">

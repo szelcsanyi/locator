@@ -38,7 +38,7 @@ PHP closing tag at end of PHP-only file: no [20/20, 100%]
 
 PHP constant case: lower [14/14, 100%]
 
-PHP keyword case: lower [239/239, 100%]
+PHP keyword case: lower [238/238, 100%]
 
 PHP short open tag used: no [20/20, 100%]
 
@@ -51,7 +51,7 @@ Spaces before control structure close parenthesis: 0 [22/24, 91.67%]
 Use of ELSE IF or ELSEIF: elseif [1/1, 100%]
 
 ----------------------------------------------------------------------
-Time: 379ms; Memory: 7.75Mb
+Time: 374ms; Memory: 8Mb
 
 
 FILE: ...end/var/apps/http/vendor/hive/locator/Source/Contract/Driver.php
@@ -225,7 +225,7 @@ PHPCBF CAN FIX THE 19 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: .../local/zend/var/apps/http/vendor/hive/locator/Source/Library.php
 ----------------------------------------------------------------------
-FOUND 21 ERRORS AND 1 WARNING AFFECTING 17 LINES
+FOUND 22 ERRORS AND 1 WARNING AFFECTING 17 LINES
 ----------------------------------------------------------------------
    1 | ERROR   | [x] There must be one blank line after the namespace
      |         |     declaration
@@ -243,8 +243,10 @@ FOUND 21 ERRORS AND 1 WARNING AFFECTING 17 LINES
  117 | ERROR   | [x] Blank line found at start of control structure
  121 | ERROR   | [x] Blank line found at end of control structure
  122 | ERROR   | [x] Blank line found at start of control structure
- 144 | ERROR   | [x] Expected 1 space between comma and type hint
-     |         |     "int"; 2 found
+ 144 | ERROR   | [x] Expected 0 spaces between opening bracket and
+     |         |     argument "$data"; 1 found
+ 144 | ERROR   | [x] Expected 1 space between comma and argument
+     |         |     "$depth"; 3 found
  151 | ERROR   | [x] Expected 0 spaces before closing bracket; 1
      |         |     found
  151 | ERROR   | [x] Blank line found at start of control structure
@@ -259,7 +261,7 @@ FOUND 21 ERRORS AND 1 WARNING AFFECTING 17 LINES
  186 | ERROR   | [x] The closing brace for the class must go on the
      |         |     next line after the body
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 21 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 22 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -314,7 +316,7 @@ FOUND 32 ERRORS AND 4 WARNINGS AFFECTING 35 LINES
 PHPCBF CAN FIX THE 32 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 379ms; Memory: 7.75Mb
+Time: 374ms; Memory: 8Mb
 
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
@@ -336,17 +338,18 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Squiz     Functions           Function declaration           2
 [x] Squiz     White space         Scope keyword spacing incorre  1
 [x] Squiz     Functions           Function declaration argument  1
+[x] Squiz     Functions           Function declaration argument  1
 [x] Squiz     Control structures  Control signature space after  1
 [x] PSR2      Methods             Function call signature space  1
 [x] PSR2      Files               End file newline too many      1
 [x] Generic   Functions           Function call argument spacin  1
 ----------------------------------------------------------------------
-A TOTAL OF 103 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
+A TOTAL OF 104 SNIFF VIOLATIONS WERE FOUND IN 20 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 17 MARKED SOURCES AUTOMATICALLY (93 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 18 MARKED SOURCES AUTOMATICALLY (94 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 386ms; Memory: 7.75Mb
+Time: 381ms; Memory: 8Mb
 
 
 PHP CODE SNIFFER REPORT SUMMARY
@@ -366,13 +369,13 @@ FILE                                                  ERRORS  WARNINGS
 ...ive/locator/Source/Exception/UndefinedMapping.php  2       0
 ...ve/locator/Source/Exception/UndefinedProperty.php  2       0
 ...apps/http/vendor/hive/locator/Source/Instance.php  20      0
-.../apps/http/vendor/hive/locator/Source/Library.php  21      1
+.../apps/http/vendor/hive/locator/Source/Library.php  22      1
 ...r/apps/http/vendor/hive/locator/Source/Object.php  32      4
 ----------------------------------------------------------------------
-A TOTAL OF 95 ERRORS AND 8 WARNINGS WERE FOUND IN 20 FILES
+A TOTAL OF 96 ERRORS AND 8 WARNINGS WERE FOUND IN 20 FILES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX 93 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 94 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 386ms; Memory: 7.75Mb
+Time: 381ms; Memory: 8Mb
 

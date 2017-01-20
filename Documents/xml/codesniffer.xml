@@ -62,7 +62,7 @@
  <error line="89" column="57" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
  <error line="95" column="1" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" severity="5" fixable="1">The closing brace for the class must go on the next line after the body</error>
 </file>
-<file name="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" errors="21" warnings="0" fixable="21">
+<file name="/usr/local/zend/var/apps/http/vendor/hive/locator/Source/Library.php" errors="22" warnings="0" fixable="22">
  <error line="1" column="7" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter" severity="5" fixable="1">There must be one blank line after the namespace declaration</error>
  <error line="51" column="5" source="Squiz.WhiteSpace.ScopeKeywordSpacing.Incorrect" severity="5" fixable="1">Scope keyword &quot;public&quot; must be followed by a single space</error>
  <error line="95" column="15" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket" severity="5" fixable="1">Expected 0 spaces before closing bracket; 1 found</error>
@@ -72,7 +72,8 @@
  <error line="117" column="39" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>
  <error line="121" column="1" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose" severity="5" fixable="1">Blank line found at end of control structure</error>
  <error line="122" column="16" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>
- <error line="144" column="42" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeHint" severity="5" fixable="1">Expected 1 space between comma and type hint &quot;int&quot;; 2 found</error>
+ <error line="144" column="29" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen" severity="5" fixable="1">Expected 0 spaces between opening bracket and argument &quot;$data&quot;; 1 found</error>
+ <error line="144" column="38" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeArg" severity="5" fixable="1">Expected 1 space between comma and argument &quot;$depth&quot;; 3 found</error>
  <error line="151" column="52" source="PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace" severity="5" fixable="1">Expected 0 spaces before closing bracket; 1 found</error>
  <error line="151" column="55" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>
  <error line="154" column="47" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen" severity="5" fixable="1">Blank line found at start of control structure</error>

@@ -141,7 +141,7 @@ class Library implements Contract\Library
      *
      * @return bool
      */
-    private function parse(array $data,  int $depth = 0)// : bool
+    private function parse( $data,   $depth = 0) // : bool
     {
 
         // Assign the current alias and increment depth
