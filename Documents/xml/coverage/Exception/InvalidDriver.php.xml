@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="InvalidDriver.php">
+    <totals>
+      <lines total="47" comments="27" code="20" executable="8" executed="0" percent="0.00%"/>
+      <methods count="1" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="InvalidDriver" start="16" executable="8" executed="0" crap="6">
+      <package full="Hive.Locator" name="Hive" sub="Locator" category=""/>
+      <namespace name="Hive\Locator\Exception"/>
+      <method name="__construct" signature="__construct($driver)" start="34" end="46" crap="6" executable="8" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>
