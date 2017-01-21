@@ -105,7 +105,7 @@ class Library implements Contract\Library
      *
      * @return \stdClass of the result, with correct map assigned or false if it doesn't exist
      */
-    public function resolve($subject)//  :  \stdClass
+    public function resolve($subject)  :  \stdClass
     {
         // Reset the status to false, as we are about the parse a new value
         $this->status = false;
@@ -141,7 +141,7 @@ class Library implements Contract\Library
      *
      * @return bool
      */
-    private function parse( $data,   $depth = 0) // : bool
+    private function parse( $data,   $depth = 0)  : bool
     {
 
         // Assign the current alias and increment depth

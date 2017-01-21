@@ -181,7 +181,7 @@ class Object extends Library implements Contract\Object
      * @throws Exception\UndefinedMapping
      * @throws Exception\UnresolvedLegend
      */
-    public function get() // : \stdClass
+    public function get()  : \stdClass
     {
 
         // Make sure we have a result

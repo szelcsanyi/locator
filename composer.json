@@ -1,10 +1,10 @@
 {
-  "name": "hive/router",
-  "description": "Hive Decoupled Routing Library",
+  "name": "hive/locator",
+  "description": "Hive Decoupled Locator Library",
   "keywords": [
     "mvc", "router",  "hive", "wax", "library", "helper"
   ],
-  "homepage": "https://hive.github.io/router/",
+  "homepage": "https://hive.github.io/locator/",
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -13,13 +13,13 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/hive/router/issues",
-    "wiki": "https://github.com/hive/router/wiki",
-    "source": "https://github.com/hive/router"
+    "issues": "https://github.com/hive/locator/issues",
+    "wiki": "https://github.com/hive/locator/wiki",
+    "source": "https://github.com/locator/router"
   },
   "type": "Library",
   "require": {
-    "php": ">5.3.0"
+    "php": ">7.0.0"
   },
   "autoload": {
     "psr-4": {
