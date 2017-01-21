@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Hive\\Benchmark\\": "source"
+      "Hive\\Locator\\": "source"
     }
   },
   "extra": {
