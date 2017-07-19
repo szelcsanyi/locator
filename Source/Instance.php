@@ -38,6 +38,8 @@ class Instance extends Object implements Contract\Instance
      *
      * @param $name
      *
+     * @throws Exception\InstanceDoesNotExist
+     *
      * @return mixed
      */
     public static function init($name) {
@@ -57,10 +59,13 @@ class Instance extends Object implements Contract\Instance
 
     /**
      * Shortcut Method, for creating, parsing and saving the object in one call.
+     *
      * @param       $name
      * @param       $subject
      * @param array $data
      * @param array $config
+     *
+     * @throws Exception\InstanceExists
      */
     public static function construct (string $name, $subject, array $data, array $config = [])
     {
@@ -86,10 +91,9 @@ class Instance extends Object implements Contract\Instance
      *
      * @return mixed
      */
-    public static function __callStatic($name, $params) {
-
+    public static function __callStatic($name, $params)
+    {
         return self::init($name);
-
     }
 
 }
