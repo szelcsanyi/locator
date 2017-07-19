@@ -19,68 +19,59 @@ class Instance extends Object implements Contract\Instance
 {
     private static $objects;
 
-    public function __construct(string $name, array $map, array $config = []) {
 
-        if(!isset(self::$objects[$name])) {
-
+    public function __construct($name, array $map, array $config = [])
+    {
+        if( ! isset(self::$objects[$name]))
+        {
             parent::__construct($map, $config);
             self::$objects[$name] = $this;
-
-        } else {
-
+        }
+        else
+        {
             throw new Exception\InstanceExists($name);
         }
-
     }
+
 
     /**
      * Old Fashioned way to access the object.
      *
      * @param $name
      *
-     * @throws Exception\InstanceDoesNotExist
-     *
      * @return mixed
      */
-    public static function init($name) {
-
-        if(isset(self::$objects[$name])) {
-
+    public static function init($name)
+    {
+        if (isset(self::$objects[$name]))
+        {
             return self::$objects[$name];
-
-        } else {
-
-            throw new Exception\InstanceDoesNotExist($name);
-
         }
-
+        else
+        {
+            throw new Exception\InstanceDoesNotExist($name);
+        }
     }
 
 
     /**
      * Shortcut Method, for creating, parsing and saving the object in one call.
-     *
      * @param       $name
      * @param       $subject
      * @param array $data
      * @param array $config
-     *
-     * @throws Exception\InstanceExists
      */
-    public static function construct (string $name, $subject, array $data, array $config = [])
+    public static function construct ($name, $subject, array $data, array $config = [])
     {
-
-        if(!isset(self::$object[$name])) {
-
+        if ( ! isset(self::$object[$name]))
+        {
             self::$objects[$name] = new Object($data, $config);
             self::$objects[$name]->parse($subject);
-
-        } else {
-
-            throw new Exception\InstanceExists($name);
-
         }
-
+        else
+        {
+            throw new Exception\InstanceExists($name);
+        }
     }
 
 
@@ -95,5 +86,4 @@ class Instance extends Object implements Contract\Instance
     {
         return self::init($name);
     }
-
 }
