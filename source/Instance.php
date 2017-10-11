@@ -40,6 +40,7 @@ class Instance extends Object implements Contract\Instance
      * @param $name
      *
      * @return mixed
+     * @throws Exception\InstanceDoesNotExist
      */
     public static function init($name)
     {
@@ -60,6 +61,7 @@ class Instance extends Object implements Contract\Instance
      * @param       $subject
      * @param array $data
      * @param array $config
+     * @throws Exception\InstanceExists
      */
     public static function construct ($name, $subject, array $data, array $config = [])
     {

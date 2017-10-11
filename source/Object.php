@@ -100,22 +100,22 @@ class Object extends Library implements Contract\Object
     public function __call($name, $arguments)
     {
 
+
         // If magic methods are turned on
-        if ($this->config['access']['method']) {
+        if ($this->config['access']['method'])
+        {
 
             // If we have a value
-            if ($value = $this->magic($name)) {
-
+            if ($value = $this->magic($name))
+            {
                 // If there was an argument sent in, compare the values.
-                if (isset($arguments[0])) {
-
+                if (isset($arguments[0]))
+                {
                     $value = ($value == $arguments[0]);
-
                 }
 
                 return $value;
             }
-
         }
 
         // Throw a Bad Method call as the method wasn't found.
@@ -134,27 +134,25 @@ class Object extends Library implements Contract\Object
      */
     private function magic($name)
     {
-
         // Make sure we have a result
-        if ($this->status) {
+        if ($this->status)
+        {
 
             // If the current property is set and the called property, return the current result.
-            if (in_array($name, $this->config['current'])) {
-
+            if (in_array($name, $this->config['current']))
+            {
                 return (object) $this->result;
-
             }
 
             // Return the current item directly by a call to its legend property
-            if (in_array($name, $this->config['legend'])) {
-
+            if (in_array($name, $this->config['legend']))
+            {
                 return $this->result[$name];
-
             }
 
             // Return the current item directly by a call to its alias
-            if (in_array($name, array_keys($this->config['aliases']))) {
-
+            if (in_array($name, array_keys($this->config['aliases'])))
+            {
                 // Find what legend we are looking for from the alias
                 $legend = $this->config['aliases'][$name];
                 return $this->result[$legend];
@@ -162,13 +160,12 @@ class Object extends Library implements Contract\Object
 
             return false; #:(
 
-        } else {
-
+        }
+        else
+        {
             // You can not us ean alias with an unresolved legend.
             throw new Exception\UnresolvedLegend();
-
         }
-
     }
 
 
@@ -185,11 +182,11 @@ class Object extends Library implements Contract\Object
     {
 
         // Make sure we have a result
-        if ($this->status) {
-
+        if ($this->status)
+        {
             $args = func_get_args();
-            $result = $this->map;
 
+            $result = $this->map;
 
             $legends = $this->config['legend'];
 
@@ -197,42 +194,38 @@ class Object extends Library implements Contract\Object
             array_pop($legends);
 
             // loop through all of the legends and assign them based of the args
-            for ($i=0; $i<count($legends); $i++) {
-
-                if (isset($args[$i]) && !in_array($args[$i], $this->config['current'])) {
-
+            for ($i=0; $i<count($legends); $i++)
+            {
+                if (isset($args[$i]) && !in_array($args[$i], $this->config['current']))
+                {
                     // If the item exists with in our result, use it otherwise throw an exception
-                    if (isset($result[$args[$i]])) {
-
+                    if (isset($result[$args[$i]]))
+                    {
                         $result = $result[$args[$i]];
                         $map[$legends[$i]] = $args[$i];
-
-                    } else {
-
+                    }
+                    else
+                    {
                         // There is no mapping of that name, throw an exception.
                         throw new Exception\UndefinedMapping($legends[$i], $args[$i]);
                     }
-
-                } else {
-
+                }
+                else
+                {
                     $result = $result[$this->result[$legends[$i]]];
                     $map[$legends[$i]] = $this->result[$legends[$i]];
                 }
-
-
             }
 
             $map[end($this->config['legend'])] = $result;
 
-
             return (object) $map;
 
-
-        } else {
-
+        }
+        else
+        {
             // You can not us ean alias with an unresolved legend.
             throw new Exception\UnresolvedLegend();
-
         }
 
     }

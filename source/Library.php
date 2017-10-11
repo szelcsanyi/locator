@@ -114,13 +114,13 @@ class Library implements Contract\Library
         $this->subject = $subject;
 
         // Parse the map
-        if ($this->parse($this->map)) {
-
+        if ($this->parse($this->map))
+        {
             // Convert the result into an object and return
             return (object) ($this->result);
-
-        } else {
-
+        }
+        else
+        {
             // return the result with all false values
             return (object) array_fill_keys($this->config['legend'], false);
         }
@@ -148,21 +148,21 @@ class Library implements Contract\Library
         $legend = $this->config['legend'][$depth++];
 
         // Gigo check, ensure that there is an alias for the map.
-        if ($depth < count($this->config['legend']) ) {
-
+        if ($depth < count($this->config['legend']) )
+        {
             // Loop through all the items in the current array
-            foreach ($data as $key => $value) {
-
-                // if the value is an array check to see if its child meets the critera
-                if (is_array($value) && $this->parse($value, $depth)) {
-
+            foreach ($data as $key => $value)
+            {
+                // if the value is an array check to see if its child meets the criteria
+                if (is_array($value) && $this->parse($value, $depth))
+                {
                     // Set the alias and return
                     $this->result[$legend] = $key;
 
                     return true;
-
-                } elseif (!is_array($value) && $this->driver->compare($this->subject, $value)) {
-
+                }
+                elseif (!is_array($value) && $this->driver->compare($this->subject, $value))
+                {
                     // We had a value, and it passed the compare, assign it and its key back to our result and return.
                     $this->result[$this->config['legend'][$depth]] = $value;
                     $this->result[$legend]                         = $key;
@@ -171,12 +171,11 @@ class Library implements Contract\Library
                     return $this->status = true;
                 }
             }
-
-        } else {
-
+        }
+        else
+        {
             // There legend doesn't match the map we were sent in, each map item needs a legend
             throw new Exception\IncompleteLegend();
-
         }
 
         // these are not the androids you are looking for.
