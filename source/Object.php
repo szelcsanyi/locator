@@ -28,7 +28,7 @@ class Object extends Library implements Contract\Object
      * @var array ['access'] : array : Whether to allow access to the result through method calls, property calls or a 'current'.
      * @var array ['current'] : array : Any names which to allow access to the current result.
      */
-    private $config = [
+    protected $config = [
         'legend'    => ['server', 'type', 'domain'],
         'aliases'   => ['in' => 'server', 'as' => 'type', 'is' => 'domain'],
         'driver'    => 'Hive\Locator\Driver\Simple',
@@ -98,12 +98,14 @@ class Object extends Library implements Contract\Object
      */
     public function __call($name, $arguments)
     {
+
         // If magic methods are turned on
         if ($this->config['access']['method'])
         {
             // If we have a value
             if ($value = $this->magic($name))
             {
+
                 // If there was an argument sent in, compare the values.
                 if (isset($arguments[0]))
                 {

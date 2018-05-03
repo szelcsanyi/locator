@@ -205,7 +205,7 @@ Accessing other maps
 
     // Finally you can use the paramters to specify what ever you are looking for.
     // This comes in handly for maps which have more then three levels.
-    echo $environment->production('draft', 'admin'); 
+    echo $environment->production('draft', 'admin');
 
  ```
 
