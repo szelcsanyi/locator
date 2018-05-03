@@ -18,19 +18,19 @@ You are best to have a quick look at the examples below, but generally speaking 
 ```php
 $map = [
   'production' => [
-      'site' => string 'domain.com'
-      'admin' => string 'admin.domain.com'
-      'draft' => string 'draft.domain.com'
+      'site' => 'domain.com'
+      'admin' => 'admin.domain.com'
+      'draft' => 'draft.domain.com'
   ]
   'staging' => [
-      'site' => string 'staging.com.au'
-      'admin' => string 'admin.staging.com.au'
-      'draft' => string 'draft.staging.com.au'
+      'site' => 'staging.com.au'
+      'admin' => 'admin.staging.com.au'
+      'draft' => 'draft.staging.com.au'
   ]
   'development' => [
-      'site' => string 'domain.vrt'
-      'admin' => string 'admin.domain.vrt'
-      'draft' => string 'draft.domain.vrt'
+      'site' => 'domain.vrt'
+      'admin' => 'admin.domain.vrt'
+      'draft' => 'draft.domain.vrt'
   ]
 ];
 
@@ -136,12 +136,95 @@ Further to this how items in the array our found is by using drivers located in 
 -------
  ```php
     use hive\locator;
+
+    $map = [
+        'production'    => [
+            'site' =>   'domain.com',
+            'admin' =>  'admin.domain.com',
+            'draft' =>  'draft.domain.com',
+        ],
+        'beta'          => [
+            'site' =>  'beta.com.au',
+            'admin' => 'admin.beta.com.au',
+            'draft' => 'draft.beta.com.au',
+        ],
+        'staging'       => [
+            'site' =>  'site.custom.staging.com.au',
+            'admin' => 'admin.custom.staging.com.au',
+            'draft' => 'draft.custom.staging.com.au',
+        ],
+        'development'   => [
+            'site' =>  'site.vrt',
+            'admin' => 'admin.vrt',
+            'draft' => 'draft.vrt',
+        ]
+    ];
+
+    $current = $_SERVER['SERVER_NAME'];
+
+ ```
+
+
+ Simple Object
+
+ ```php
+
+    // Set out options, ie. what we want to call items, these are actually the default values.
+    $options = [
+        'legend'    => ['server', 'type', 'domain'],
+    ];
+
+    // Create the object
+    $environment = new Locator\Object($map, $options);
+
+    // Resolve our current url against the map.
+    $environment->resolve($current);
+
+    // Access our current item using object properties and the legend.
+    echo $environment->server;
+    echo $environment->type;
+    echo $environment->domain;
+
+ ```
+
+Accessing other maps
+ ```php
+
+    // Create the object
+    $environment = new Locator\Object($map, $options);
+
+    // Resolve our current url against the map.
+    $environment->resolve('admin.custom.staging.com.au');
+
+    // When we parsed the subject, the library works out ou current 'server' and 'type'.
+    // This means we can access the other maps, using these as the default items to look for. ie. relative.
+    echo $environment->production()->domain; // because our current subject was found in admin, this will return the production admin domain.
+
+    // Never fear, we can still access the full items values.
+    echo $environment->production('draft')->domain
+
+    // Finally you can use the paramters to specify what ever you are looking for.
+    // This comes in handly for maps which have more then three levels.
+    echo $environment->production('draft', 'admin'); 
+
  ```
 
 
  Simple Instance
  ```php
 
+
+    // Creating an instance of the item, allows you to access it statically later.
+    Locator\Instance::Environment($map);
+    Locator\Instance::Environment()->resolve($current);
+
+    // You can access the items much the same as with the object.
+    // This will find the production details which most closely match out resolved subject.
+    // ie. if we are on the draft site, it will return the production draft domain.
+    Locator\Instance::Environment()->production()->domain;
+
+    // Or specify exactly what you are looking for : ie get the production/admin/domain
+    echo Locator\Instance::Environment()->production('admin')->domain;
 
 
  ```
