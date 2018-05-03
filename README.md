@@ -15,7 +15,7 @@ What does that actualy mean?
 Honstly, its hard to explain, its going to give you access to an array of items in new and exciting ways.
 You are best to have a quick look at the examples below, but generally speaking if i have an array of all the servers environments :
 
-```
+```php
 $map = [
   'production' => [
       'site' => string 'domain.com'
@@ -73,6 +73,7 @@ Documentation can be found in from the /docs/index.html file.
  * phpUnit is not currently running on the php7 branches, due to the changes in its namespaces.
  * PhpMetrics scores are not currently taking into account phpUnit test or code coverage.
  * There is currently no phpUnitTests
+ * Contracts will not be implemented until RC.
 
 ## Installation
 
