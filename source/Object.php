@@ -68,17 +68,16 @@ class Object extends Library implements Contract\Object
     public function __get($name)
     {
         // If magic properties are turned on
-        if ($this->config['access']['property']) {
-
+        if ($this->config['access']['property'])
+        {
             // If we have a value, return it
             if ($value = $this->magic($name)) {
                 return $value;
             }
-
         }
 
         // Throw a Bad Method call as the method wasn't found.
-        throw new Exception\UndefinedProperty(__CLASS__,  $name);
+        throw new Exception\UndefinedProperty(__CLASS__, $name);
     }
 
 
@@ -99,12 +98,9 @@ class Object extends Library implements Contract\Object
      */
     public function __call($name, $arguments)
     {
-
-
         // If magic methods are turned on
         if ($this->config['access']['method'])
         {
-
             // If we have a value
             if ($value = $this->magic($name))
             {
@@ -119,8 +115,7 @@ class Object extends Library implements Contract\Object
         }
 
         // Throw a Bad Method call as the method wasn't found.
-        throw new Exception\BadMethodCall(__CLASS__,  $name);
-
+        throw new Exception\BadMethodCall(__CLASS__, $name);
     }
 
 
@@ -137,7 +132,6 @@ class Object extends Library implements Contract\Object
         // Make sure we have a result
         if ($this->status)
         {
-
             // If the current property is set and the called property, return the current result.
             if (in_array($name, $this->config['current']))
             {
@@ -159,7 +153,6 @@ class Object extends Library implements Contract\Object
             }
 
             return false; #:(
-
         }
         else
         {
@@ -180,7 +173,6 @@ class Object extends Library implements Contract\Object
      */
     public function get()
     {
-
         // Make sure we have a result
         if ($this->status)
         {
@@ -202,7 +194,7 @@ class Object extends Library implements Contract\Object
                     if (isset($result[$args[$i]]))
                     {
                         $result = $result[$args[$i]];
-                        $map[$legends[$i]] = $args[$i];
+                        //$map[$legends[$i]] = $args[$i];
                     }
                     else
                     {
@@ -220,14 +212,11 @@ class Object extends Library implements Contract\Object
             $map[end($this->config['legend'])] = $result;
 
             return (object) $map;
-
         }
         else
         {
             // You can not us ean alias with an unresolved legend.
             throw new Exception\UnresolvedLegend();
         }
-
     }
-
 }

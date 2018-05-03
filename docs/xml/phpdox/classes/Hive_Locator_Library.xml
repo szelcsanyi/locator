@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Library" namespace="Hive\Locator" name="Library" abstract="false" final="false" start="19" end="183">
+  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Library.php" size="5643" time="2018-05-03T15:02:45+11:00" unixtime="1525320165" sha1="1c3d1df52f617244603da59cfb56299480731b22" relative="Library.php"/>
+  <docblock>
+    <description compact="Locator Library.">The actual Locator library, which does the core operations.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/locator/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Locator"/>
+    <copyright value="(c) 2017 Jamie Peake"/>
+  </docblock>
+  <implements full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library"/>
+  <constant type="{unknown}" name="DRIVER_CONTRACT" value="'Hive\Locator\Contract\Driver'">
+    <docblock>
+      <description compact="Contract which a driver must implement. (Magic Value)"/>
+    </docblock>
+  </constant>
+  <member name="map" type="array" default="" visibility="public" static="false" line="33">
+    <docblock>
+      <description compact="The array or 'map' upon which to parse"/>
+      <var description="Must be an associative array" type="array"/>
+    </docblock>
+  </member>
+  <member name="config" type="array" default="" visibility="private" static="false" line="41">
+    <docblock>
+      <description compact="Default configuration settings."/>
+      <var description="['legend'] : array : Legend used to create the map, ie. what to call each of the array keys (in order)" type="array"/>
+      <var description="['aliases'] : array : Alias to the legend as methods $environment-&gt;in('staging'); $environment-&gt;is('domain.com.au');" type="array"/>
+      <var description="['driver'] : s108tring|object : The driver which will compare our value to see if it is a match" type="array"/>
+    </docblock>
+  </member>
+  <member name="status" type="boolean" default="false" visibility="public" static="false" line="50">
+    <docblock>
+      <description compact="Status of whether or not we have found a result"/>
+      <var type="object">
+        <type full="Hive\Locator\bool" namespace="Hive\Locator" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="result" type="array" default="" visibility="public" static="false" line="57">
+    <docblock>
+      <description compact="The result of the map/legend, used while we build it up."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="driver" type="boolean" default="false" visibility="protected" static="false" line="63">
+    <docblock>
+      <description compact="Comparison driver object"/>
+      <var type="object">
+        <type full="Hive\Locator\bool|object" namespace="Hive\Locator" name="bool|object"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="subject" type="boolean" default="false" visibility="private" static="false" line="69">
+    <docblock>
+      <description compact="The item to look for."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="79" end="98" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Let the magic begin, assign our map and set our configuration"/>
+      <throws type="object">
+        <type full="Hive\Locator\Exception\InvalidDriver" namespace="Hive\Locator\Exception" name="InvalidDriver"/>
+      </throws>
+      <param description="The actual environment mapping" type="array" variable="$map"/>
+      <param description="Configuration settings for this class" type="array" variable="$config"/>
+    </docblock>
+    <parameter name="map" byreference="false" type="array"/>
+    <parameter name="config" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="Map needs to be defined on creation." line="81"/>
+      <comment value="Merge the received config with the defaults" line="84"/>
+      <comment value="Create the driver object if it hasn't been created already" line="87"/>
+      <comment value="Gigo Check that the driver implements the driver interface" line="93"/>
+    </inline>
+  </constructor>
+  <method name="resolve" start="107" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Takes a subject and resolves it against the legend, returns the map information as a result"/>
+      <param description="the subject to search the map for and assign the result" type="mixed" variable="$subject"/>
+      <return description="of the result, with correct map assigned or false if it doesn't exist" type="object">
+        <type full="\stdClass" namespace="" name="stdClass"/>
+      </return>
+    </docblock>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Reset the status to false, as we are about the parse a new value" line="109"/>
+      <comment value="Assign the subject to search for" line="112"/>
+      <comment value="Parse the map" line="115"/>
+    </inline>
+  </method>
+  <method name="parse" start="143" end="182" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Parse the map, using the legend it returns the location of the array."/>
+      <todo value="to be moved the array helper (when written) : array::locate"/>
+      <recursive/>
+      <throws type="object">
+        <type full="\Hive\Locator\Exception\IncompleteLegend" namespace="\Hive\Locator\Exception" name="IncompleteLegend"/>
+      </throws>
+      <param description="the array to parse looking for a values location" type="array" variable="$data"/>
+      <param description="private value used as a internal pointer of the data for the recursive method" type="int" variable="$depth"/>
+      <return type="object">
+        <type full="Hive\Locator\bool" namespace="Hive\Locator" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="depth" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Assign the current alias and increment depth" line="146"/>
+      <comment value="Gigo check, ensure that there is an alias for the map." line="149"/>
+      <comment value="these are not the androids you are looking for." line="180"/>
+    </inline>
+  </method>
+  <interface full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library">
+    <method name="resolve" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Resolves a subject against the internal map, returning the legend for the object"/>
+        <param variable="$subject"/>
+        <return description="a object of the subjects legend values." type="object">
+          <type full="\stdClass" namespace="" name="stdClass"/>
+        </return>
+      </docblock>
+      <parameter name="subject" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+  <extenders>
+    <extender full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
+  </extenders>
+</class>

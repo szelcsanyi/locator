@@ -25,10 +25,9 @@ class Expression implements \Hive\Locator\Contract\Driver
      *
      * @return bool whether or not one or more matches were found
      */
-    public function compare($pattern, $subject)// : bool
+    public function compare($pattern, $subject)
     {
         preg_match($subject, $subject, $matches);
         return (isset($matches) && count($matches));
     }
-
 }

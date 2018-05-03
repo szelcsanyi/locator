@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library" abstract="false" final="false" start="16" end="26">
+  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Contract" file="Library.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Contract/Library.php" size="628" time="2018-05-03T15:01:21+11:00" unixtime="1525320081" sha1="b4b8cfa50923af91ea870bc8241a4b85b5b90a8b" relative="Contract/Library.php"/>
+  <docblock>
+    <description compact="Library Interface.">Interface for the library used as a contact.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/locator/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Locator"/>
+    <copyright value="(c) 2017 Jamie Peake"/>
+  </docblock>
+  <method name="resolve" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Resolves a subject against the internal map, returning the legend for the object"/>
+      <param variable="$subject"/>
+      <return description="a object of the subjects legend values." type="object">
+        <type full="\stdClass" namespace="" name="stdClass"/>
+      </return>
+    </docblock>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Hive\Locator\Library" namespace="Hive\Locator" name="Library"/>
+    <class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
+  <class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/></implementors>
+</interface>

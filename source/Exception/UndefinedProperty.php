@@ -40,9 +40,5 @@ class UndefinedProperty extends \Hive\Locator\Exception
         $message = strtr(self::MESSAGE, [':class' => $class, ':property' => $property]);
 
         parent::__construct($message, $code);
-
     }
-
-
-
 }

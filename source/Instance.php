@@ -22,9 +22,11 @@ class Instance extends Object implements Contract\Instance
 
     public function __construct($name, array $map, array $config = [])
     {
-        if( ! isset(self::$objects[$name]))
+
+        if(!isset(self::$objects[$name]))
         {
             parent::__construct($map, $config);
+
             self::$objects[$name] = $this;
         }
         else
@@ -44,6 +46,7 @@ class Instance extends Object implements Contract\Instance
      */
     public static function init($name)
     {
+
         if (isset(self::$objects[$name]))
         {
             return self::$objects[$name];
@@ -63,9 +66,9 @@ class Instance extends Object implements Contract\Instance
      * @param array $config
      * @throws Exception\InstanceExists
      */
-    public static function construct ($name, $subject, array $data, array $config = [])
+    public static function construct($name, $subject, array $data, array $config = [])
     {
-        if ( ! isset(self::$object[$name]))
+        if (! isset(self::$object[$name]))
         {
             self::$objects[$name] = new Object($data, $config);
             self::$objects[$name]->parse($subject);

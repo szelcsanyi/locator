@@ -29,5 +29,4 @@ class Strict implements \Hive\Locator\Contract\Driver
     {
         return $examine == $subject;
     }
-
 }

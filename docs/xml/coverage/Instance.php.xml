@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Instance.php">
+    <totals>
+      <lines total="94" comments="38" code="56" executable="35" executed="0" percent="0.00%"/>
+      <methods count="4" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Instance" start="18" executable="35" executed="0" crap="56">
+      <package full="Hive.Locator" name="Hive" sub="Locator" category=""/>
+      <namespace name="Hive\Locator"/>
+      <method name="__construct" signature="__construct($name, array $map, array $config = [])" start="23" end="36" crap="6" executable="11" executed="0" coverage="0"/>
+      <method name="init" signature="init($name)" start="47" end="58" crap="6" executable="10" executed="0" coverage="0"/>
+      <method name="construct" signature="construct($name, $subject, array $data, array $config = [])" start="69" end="80" crap="6" executable="11" executed="0" coverage="0"/>
+      <method name="__callStatic" signature="__callStatic($name, $params)" start="90" end="93" crap="2" executable="3" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>

@@ -42,7 +42,4 @@ class UndefinedMapping extends \Hive\Locator\Exception
         parent::__construct($message, $code);
 
     }
-
-
-
 }

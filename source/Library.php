@@ -1,6 +1,5 @@
 <?php namespace Hive\Locator;
 
-
 use Hive\Locator\Contract;
 use Hive\Locator\Driver;
 
@@ -48,7 +47,7 @@ class Library implements Contract\Library
      * Status of whether or not we have found a result
      * @var bool
      */
-    public  $status = false;
+    public $status = false;
 
 
     /**
@@ -79,7 +78,6 @@ class Library implements Contract\Library
      */
     public function __construct(array $map, array $config = [])
     {
-
         // Map needs to be defined on creation.
         $this->map = $map;
 
@@ -87,13 +85,14 @@ class Library implements Contract\Library
         $this->config = array_merge($this->config, $config);
 
         // Create the driver object if it hasn't been created already
-        if (!is_object($this->config['driver'])) {
+        if (!is_object($this->config['driver']))
+        {
             $this->driver = new $this->config['driver']();
         }
 
         // Gigo Check that the driver implements the driver interface
-        if (! in_array(self::DRIVER_CONTRACT, class_implements($this->driver) )  )  {
-
+        if (! in_array(self::DRIVER_CONTRACT, class_implements($this->driver)))
+        {
             throw new Exception\InvalidDriver($this->config['driver']);
         }
     }
@@ -141,14 +140,14 @@ class Library implements Contract\Library
      *
      * @return bool
      */
-    private function parse( $data,   $depth = 0)
+    private function parse($data, $depth = 0)
     {
 
         // Assign the current alias and increment depth
         $legend = $this->config['legend'][$depth++];
 
         // Gigo check, ensure that there is an alias for the map.
-        if ($depth < count($this->config['legend']) )
+        if ($depth < count($this->config['legend']))
         {
             // Loop through all the items in the current array
             foreach ($data as $key => $value)
@@ -181,5 +180,4 @@ class Library implements Contract\Library
         // these are not the androids you are looking for.
         return false; #:(
     }
-
 }

@@ -1,0 +1,223 @@
+
+[1mPHP CODE SNIFFER INFORMATION REPORT[0m
+----------------------------------------------------------------------
+CamelCase class name: [4myes[0m [20/20, 100%]
+
+CamelCase method name: [4myes[0m [13/13, 100%]
+
+Class defined in namespace: [4myes[0m [20/20, 100%]
+
+Class opening brace placement: [4mnew line[0m [20/20, 100%]
+
+Constant name case: [4mupper[0m [19/19, 100%]
+
+Control structure defined inline: [4mno[0m [33/33, 100%]
+
+Declarations and side effects mixed: [4mno[0m [20/20, 100%]
+
+EOL char: [4m\n[0m [20/20, 100%]
+
+Function opening brace placement: [4mnew line[0m [26/26, 100%]
+
+Line indent: [4mspaces[0m [642/642, 100%]
+
+Line length: [4m80 or less[0m [939/994, 94.47%]
+	81-120 => 47 (4.73%)
+	121-150 => 8 (0.8%)
+
+Multiple statements on same line: [4mno[0m [132/132, 100%]
+
+Number of newlines at EOF: [4m1[0m [20/20, 100%]
+
+One class per file: [4myes[0m [20/20, 100%]
+
+PHP closing tag at end of PHP-only file: [4mno[0m [20/20, 100%]
+
+PHP constant case: [4mlower[0m [14/14, 100%]
+
+PHP keyword case: [4mlower[0m [238/238, 100%]
+
+PHP short open tag used: [4mno[0m [20/20, 100%]
+
+Spaces after control structure open parenthesis: [4m0[0m [24/24, 100%]
+
+Spaces before control structure close parenthesis: [4m0[0m [24/24, 100%]
+
+Use of ELSE IF or ELSEIF: [4melseif[0m [1/1, 100%]
+
+----------------------------------------------------------------------
+Time: 406ms; Memory: 7.25Mb
+
+
+[1mFILE: ...rketing.gainsborough.vrt/vendor/hive/locator/source/Instance.php[0m
+----------------------------------------------------------------------
+[1mFOUND 10 ERRORS AFFECTING 9 LINES[0m
+----------------------------------------------------------------------
+ 26 | [31mERROR[0m | [x] Expected 1 space after IF keyword; 0 found
+ 26 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 31 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 32 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 50 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 53 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 54 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 71 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 75 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 76 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: ...arketing.gainsborough.vrt/vendor/hive/locator/source/Library.php[0m
+----------------------------------------------------------------------
+[1mFOUND 12 ERRORS AND 1 WARNING AFFECTING 13 LINES[0m
+----------------------------------------------------------------------
+  38 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 134
+     |         |     characters
+  88 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+  94 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 116 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 120 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 121 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+ 150 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 153 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 156 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 17
+ 162 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 163 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 17
+ 173 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 174 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: ...marketing.gainsborough.vrt/vendor/hive/locator/source/Object.php[0m
+----------------------------------------------------------------------
+[1mFOUND 20 ERRORS AND 4 WARNINGS AFFECTING 24 LINES[0m
+----------------------------------------------------------------------
+   7 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 121
+     |         |     characters
+  25 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 134
+     |         |     characters
+  28 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 129
+     |         |     characters
+  71 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 102 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 105 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 108 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 17
+ 133 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 136 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 142 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 148 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 156 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 157 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+ 168 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 129
+     |         |     characters
+ 177 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 9
+ 189 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 13
+ 191 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 17
+ 194 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+     |         |     found 21
+ 198 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 199 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+ 204 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 205 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+ 215 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+     |         |     found
+ 216 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+     |         |     found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 20 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: ...gh.vrt/vendor/hive/locator/source/Exception/IncompleteLegend.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 26 | [33mWARNING[0m | Line exceeds 120 characters; contains 141 characters
+----------------------------------------------------------------------
+
+
+[1mFILE: ...ough.vrt/vendor/hive/locator/source/Exception/InstanceExists.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 26 | [33mWARNING[0m | Line exceeds 120 characters; contains 121 characters
+----------------------------------------------------------------------
+
+
+[1mFILE: ...rough.vrt/vendor/hive/locator/source/Exception/InvalidDriver.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 26 | [33mWARNING[0m | Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------
+
+Time: 406ms; Memory: 7.25Mb
+
+
+[1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
+----------------------------------------------------------------------
+[1m    STANDARD  CATEGORY            SNIFF                          COUNT
+[0m----------------------------------------------------------------------
+[x] Squiz     Control structures  Control signature space after  22
+[x] Squiz     Control structures  Control signature space after  10
+[x] Squiz     Control structures  Control signature space after  10
+[ ] Generic   Files               Line length too long           8
+----------------------------------------------------------------------
+[1mA TOTAL OF 50 SNIFF VIOLATIONS WERE FOUND IN 4 SOURCES[0m
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (42 VIOLATIONS IN TOTAL)[0m
+----------------------------------------------------------------------
+
+Time: 406ms; Memory: 7.25Mb
+
+
+[1mPHP CODE SNIFFER REPORT SUMMARY[0m
+----------------------------------------------------------------------
+[1mFILE                                                  ERRORS  WARNINGS[0m
+----------------------------------------------------------------------
+...rough.vrt/vendor/hive/locator/source/Instance.php  [31m10[0m      0
+...orough.vrt/vendor/hive/locator/source/Library.php  [31m12[0m      [33m1[0m
+...borough.vrt/vendor/hive/locator/source/Object.php  [31m20[0m      [33m4[0m
+...ive/locator/source/Exception/IncompleteLegend.php  0       [33m1[0m
+.../hive/locator/source/Exception/InstanceExists.php  0       [33m1[0m
+...r/hive/locator/source/Exception/InvalidDriver.php  0       [33m1[0m
+----------------------------------------------------------------------
+[1mA TOTAL OF 42 ERRORS AND 8 WARNINGS WERE FOUND IN 20 FILES[0m
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX 42 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 407ms; Memory: 7.25Mb
+

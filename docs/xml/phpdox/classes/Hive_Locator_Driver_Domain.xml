@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Driver\Domain" namespace="Hive\Locator\Driver" name="Domain" abstract="false" final="false" start="17" end="52">
+  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Driver" file="Domain.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Driver/Domain.php" size="1477" time="2018-05-03T15:02:16+11:00" unixtime="1525320136" sha1="7014648a521f74dbb13c07146c95383384df6a5e" relative="Driver/Domain.php"/>
+  <docblock>
+    <description compact="Domain  Locator Library Driver.">Handles a comparison for the locator library,
+by comparing domains once they have been put in the same format.</description>
+    <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
+    <licence value="https://github.com/hive/locator/blob/master/LICENSE (BSD-3-Clause)"/>
+    <package value="Hive"/>
+    <subpackage value="Locator"/>
+    <copyright value="(c) 2017 Jamie Peake"/>
+  </docblock>
+  <implements full="Hive\Locator\Contract\Driver" namespace="Hive\Locator\Contract" name="Driver"/>
+  <method name="compare" start="28" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Does a strict (case, space and type sensitive) comparision."/>
+      <param description="the item to search for" variable="$examine" type="mixed"/>
+      <param description="the item the search" variable="$subject" type="mixed"/>
+      <return description="whether or not the two arguments are strictly equal" type="object">
+        <type full="Hive\Locator\Driver\bool" namespace="Hive\Locator\Driver" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="examine" byreference="false" type="{unknown}"/>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="domain" start="43" end="51" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="clean up the domain and put it in a standard format."/>
+      <todo value="to be moved the request helper (when written)"/>
+      <param description="the domain to parse" variable="$domain" type="string"/>
+      <return description="cleaned domain" type="string"/>
+    </docblock>
+    <parameter name="domain" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Clean the domain" line="46"/>
+      <comment value="The following line will format the urls so that they are always the with in the same format." line="49"/>
+    </inline>
+  </method>
+  <interface full="Hive\Locator\Contract\Driver" namespace="Hive\Locator\Contract" name="Driver">
+    <method name="compare" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="subject" byreference="false" type="{unknown}"/>
+      <parameter name="examine" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Library.php">
+    <totals>
+      <lines total="183" comments="109" code="74" executable="49" executed="0" percent="0.00%"/>
+      <methods count="3" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Library" start="19" executable="49" executed="0" crap="156">
+      <package full="Hive.Locator" name="Hive" sub="Locator" category=""/>
+      <namespace name="Hive\Locator"/>
+      <method name="__construct" signature="__construct(array $map, array $config = [])" start="79" end="98" crap="12" executable="12" executed="0" coverage="0"/>
+      <method name="resolve" signature="resolve($subject)" start="107" end="126" crap="6" executable="12" executed="0" coverage="0"/>
+      <method name="parse" signature="parse($data, $depth = 0)" start="143" end="182" crap="56" executable="25" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>

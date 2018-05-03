@@ -1,6 +1,5 @@
 <?php namespace Hive\Locator\Driver;
 
-
 /**
  * Domain  Locator Library Driver.
  *
@@ -41,28 +40,13 @@ class Domain implements \Hive\Locator\Contract\Driver
      *
      * @return string cleaned domain
      */
-    private function domain ($domain)// : string
+    private function domain($domain)// : string
     {
 
         // Clean the domain
         $domain = strtolower(trim($domain));
 
         // The following line will format the urls so that they are always the with in the same format.
-        return (substr($domain,0 ,3) == 'www')  ? substr($domain, 4, strlen($domain) - 4) : $domain;
+        return (substr($domain, 0, 3) == 'www')  ? substr($domain, 4, strlen($domain) - 4) : $domain;
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
