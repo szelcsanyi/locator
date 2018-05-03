@@ -50,18 +50,19 @@ I can do things like the following
         * $environment->production('site')->domain
         * $environment->production('site', 'domain')    :  Alternativly use the parameters to specify a specific object
     4. Use an alias to check my current item
-        * if($environment->in('production'))
-        * if($environment->is('admin'))
+        * if($environment->in('production'))        // false
+        * if($environment->is('admin'))             // true
 
 
 Finally its worth just mentioning all of these names/alias/options are configurable
-    * Change the name of the mappings to what ever you want. (server, type, domain)
-    * Change the name of the alias (in, is, as);
-    * Any depth of array is possible (example is three levels deep)
-    * Turn on/off features ie. ensure that items cant be access through magic methods
-    * It uses drivers to do the comparison check, included drivers are simple/strict/domains/regular experssions, but you can use your own.
-    * Items can be accessed from an object or an static instance.
-    * Change the config by extending the classes, or simply sending the contructor your configuration array.
+
+  * Change the name of the mappings to what ever you want. (server, type, domain)
+  * Change the name of the alias (in, is, as);
+  * Any depth of array is possible (example is three levels deep)
+  * Turn on/off features ie. ensure that items cant be access through magic methods
+  * It uses drivers to do the comparison check, included drivers are simple/strict/domains/regular experssions, but you can use your own.
+  * Items can be accessed from an object or an static instance.
+  * Change the config by extending the classes, or simply sending the contructor your configuration array.
 
 ## Documentation
 
@@ -190,10 +191,10 @@ The code is split up into the following classes :
         * [UndefinedProperty](source/Exception/UndefinedProperty.php)
         * [UnresolvedLegend](source/Exception/UnresolvedLegend.php)
     5. Driver : folder for any drivers for comparing
-            * [Simple](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparision.
-            * [Strict](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparision.
-            * [Domain](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparision removing any inconsistencies, ie. www.
-            * [Expression](source/Driver/Expression.php) :  Does a regular expression comparision.
+        * [Simple](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparision.
+        * [Strict](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparision.
+        * [Domain](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparision removing any inconsistencies, ie. www.
+        * [Expression](source/Driver/Expression.php) :  Does a regular expression comparision.
     6. Contract : folder for any interfaces or abstract classes they implement
         * [Library](source/Contract/Library.php)
         * [Object](source/Contract/Object.php)
