@@ -16,25 +16,25 @@ Honstly, its hard to explain, its going to give you access to an array of items 
 You are best to have a quick look at the examples below, but generally speaking if i have an array of all the servers environments :
 
 ```php
-$map = [
-  'production' => [
-      'site' => 'domain.com'
-      'admin' => 'admin.domain.com'
-      'draft' => 'draft.domain.com'
-  ]
-  'staging' => [
-      'site' => 'staging.com.au'
-      'admin' => 'admin.staging.com.au'
-      'draft' => 'draft.staging.com.au'
-  ]
-  'development' => [
-      'site' => 'domain.vrt'
-      'admin' => 'admin.domain.vrt'
-      'draft' => 'draft.domain.vrt'
-  ]
-];
-
-$environment->resolve('admin.domain.vrt');
+    $map = [
+      'production' => [
+          'site' => 'domain.com'
+          'admin' => 'admin.domain.com'
+          'draft' => 'draft.domain.com'
+      ]
+      'staging' => [
+          'site' => 'staging.com.au'
+          'admin' => 'admin.staging.com.au'
+          'draft' => 'draft.staging.com.au'
+      ]
+      'development' => [
+          'site' => 'domain.vrt'
+          'admin' => 'admin.domain.vrt'
+          'draft' => 'draft.domain.vrt'
+      ]
+    ];
+    
+    $environment->resolve('admin.domain.vrt');
 
 ```
 
@@ -90,30 +90,30 @@ Recommended installation [through composer](http://getcomposer.org).
 Via Composer Command line
 
 ```bash
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-
-# Install the latest version
-composer require hive/locator:dev-1.0.0
+    # Install Composer
+    curl -sS https://getcomposer.org/installer | php
+    
+    # Install the latest version
+    composer require hive/locator:dev-1.0.0
 
 ```
 
 ```php
-// With in your php file, include composers autoloader
-require 'vendor/autoload.php';
+    // With in your php file, include composers autoloader
+    require 'vendor/autoload.php';
 ```
 
 Via Git
 
 ```bash
-# Clone the repo
-cd helloworld.dev
-git clone https://github.com/hive/locator.git .
+    # Clone the repo
+    cd helloworld.dev
+    git clone https://github.com/hive/locator.git .
 ```
 
 ```php
-// With in your php file, include composers autoloader
-require 'hive/locator/include.php';
+    // With in your php file, include composers autoloader
+    require 'hive/locator/include.php';
 ```
 
 ## Overview
