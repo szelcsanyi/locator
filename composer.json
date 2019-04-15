@@ -2,7 +2,7 @@
   "name": "hive/locator",
   "description": "Hive Decoupled Locator Library",
   "keywords": [
-    "mvc", "router",  "hive", "wax", "library", "helper"
+    "mvc", "locator",  "hive", "wax", "library", "helper"
   ],
   "homepage": "https://hive.github.io/locator/",
   "license": "BSD-3-Clause",
@@ -15,7 +15,7 @@
   "support": {
     "issues": "https://github.com/hive/locator/issues",
     "wiki": "https://github.com/hive/locator/wiki",
-    "source": "https://github.com/locator/router"
+    "source": "https://github.com/locator/locator"
   },
   "type": "Library",
   "require": {

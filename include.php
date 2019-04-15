@@ -6,29 +6,29 @@
  */
 
 // Include the contracts
-include 'Source/Contract/Library.php';
-include 'Source/Contract/Object.php';
-include 'Source/Contract/Instance.php';
-include 'Source/Contract/Driver.php';
+include 'source/Contract/Library.php';
+include 'source/Contract/Object.php';
+include 'source/Contract/Instance.php';
+include 'source/Contract/Driver.php';
 
 // Include the exceptions
-include 'Source/Exception.php';
-include 'Source/Exception/IncompleteLegend.php';
-include 'Source/Exception/InvalidDriver.php';
-include 'Source/Exception/BadMethodCall.php';
-include 'Source/Exception/UndefinedProperty.php';
-include 'Source/Exception/UndefinedMapping.php';
-include 'Source/Exception/UnresolvedLegend.php';
-include 'Source/Exception/InstanceExists.php';
-include 'Source/Exception/InstanceDoesNotExist.php';
+include 'source/Exception.php';
+include 'source/Exception/IncompleteLegend.php';
+include 'source/Exception/InvalidDriver.php';
+include 'source/Exception/BadMethodCall.php';
+include 'source/Exception/UndefinedProperty.php';
+include 'source/Exception/UndefinedMapping.php';
+include 'source/Exception/UnresolvedLegend.php';
+include 'source/Exception/InstanceExists.php';
+include 'source/Exception/InstanceDoesNotExist.php';
 
 // Include the drivers
-include 'Source/Driver/Simple.php';
-include 'Source/Driver/Strict.php';
-include 'Source/Driver/Expression.php';
-include 'Source/Driver/Domain.php';
+include 'source/Driver/Simple.php';
+include 'source/Driver/Strict.php';
+include 'source/Driver/Expression.php';
+include 'source/Driver/Domain.php';
 
 // Include the source files
-include 'Source/Library.php';
-include 'Source/Object.php';
-include 'Source/Instance.php';
+include 'source/Library.php';
+include 'source/Object.php';
+include 'source/Instance.php';

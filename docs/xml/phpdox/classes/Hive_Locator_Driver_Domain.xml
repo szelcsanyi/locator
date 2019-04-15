@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Driver\Domain" namespace="Hive\Locator\Driver" name="Domain" abstract="false" final="false" start="17" end="52">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Driver" file="Domain.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Driver/Domain.php" size="1477" time="2018-05-03T15:02:16+11:00" unixtime="1525320136" sha1="7014648a521f74dbb13c07146c95383384df6a5e" relative="Driver/Domain.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source/Driver" file="Domain.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Driver/Domain.php" size="1477" time="2019-04-15T14:26:02+11:00" unixtime="1555298762" sha1="7014648a521f74dbb13c07146c95383384df6a5e" relative="Driver/Domain.php"/>
   <docblock>
     <description compact="Domain  Locator Library Driver.">Handles a comparison for the locator library,
 by comparing domains once they have been put in the same format.</description>

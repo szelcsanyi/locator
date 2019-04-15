@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Contract\Driver" namespace="Hive\Locator\Contract" name="Driver" abstract="false" final="false" start="16" end="19">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Contract" file="Driver.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Contract/Driver.php" size="421" time="2018-05-03T15:01:34+11:00" unixtime="1525320094" sha1="b33d136d6928b12a66f8dafb272562b228a9a8ad" relative="Contract/Driver.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source/Contract" file="Driver.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Contract/Driver.php" size="421" time="2019-04-15T14:26:02+11:00" unixtime="1555298762" sha1="b33d136d6928b12a66f8dafb272562b228a9a8ad" relative="Contract/Driver.php"/>
   <docblock>
     <description compact="Instance Interface.">Interface for use with the instances.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -16,6 +16,7 @@
   <implementors>
     <class full="Hive\Locator\Driver\Expression" namespace="Hive\Locator\Driver" name="Expression"/>
     <class full="Hive\Locator\Driver\Domain" namespace="Hive\Locator\Driver" name="Domain"/>
+    <class full="Hive\Locator\Driver\Simple" namespace="Hive\Locator\Driver" name="Simple"/>
     <class full="Hive\Locator\Driver\Strict" namespace="Hive\Locator\Driver" name="Strict"/>
   </implementors>
 </interface>

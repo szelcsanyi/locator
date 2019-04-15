@@ -46,29 +46,29 @@ Spaces before control structure close parenthesis: [4m0[0m [24/24, 100%]
 Use of ELSE IF or ELSEIF: [4melseif[0m [1/1, 100%]
 
 ----------------------------------------------------------------------
-Time: 406ms; Memory: 7.25Mb
+Time: 360ms; Memory: 7.25Mb
 
 
-[1mFILE: ...rketing.gainsborough.vrt/vendor/hive/locator/source/Instance.php[0m
+[1mFILE: ...var/apps/http/vendor.dev/vendor/hive/locator/source/Instance.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 10 ERRORS AFFECTING 9 LINES[0m
 ----------------------------------------------------------------------
- 26 | [31mERROR[0m | [x] Expected 1 space after IF keyword; 0 found
- 26 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
- 31 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
- 32 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
- 50 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
- 53 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
- 54 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
- 71 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
- 75 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
- 76 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 25 | [31mERROR[0m | [x] Expected 1 space after IF keyword; 0 found
+ 25 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 29 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 30 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 47 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 50 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 51 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
+ 68 | [31mERROR[0m | [x] Expected 1 space after closing parenthesis; found 9
+ 72 | [31mERROR[0m | [x] Expected 1 space after closing brace; newline found
+ 73 | [31mERROR[0m | [x] Expected 1 space after ELSE keyword; newline found
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...arketing.gainsborough.vrt/vendor/hive/locator/source/Library.php[0m
+[1mFILE: .../var/apps/http/vendor.dev/vendor/hive/locator/source/Library.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 12 ERRORS AND 1 WARNING AFFECTING 13 LINES[0m
 ----------------------------------------------------------------------
@@ -103,7 +103,7 @@ Time: 406ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...marketing.gainsborough.vrt/vendor/hive/locator/source/Object.php[0m
+[1mFILE: ...d/var/apps/http/vendor.dev/vendor/hive/locator/source/Object.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 20 ERRORS AND 4 WARNINGS AFFECTING 24 LINES[0m
 ----------------------------------------------------------------------
@@ -115,52 +115,52 @@ Time: 406ms; Memory: 7.25Mb
      |         |     characters
   71 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 102 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 103 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 105 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 106 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 108 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 109 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 17
- 133 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 134 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 136 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 137 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 142 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 143 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 148 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 149 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 156 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 157 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 157 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 158 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 168 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 129
+ 169 | [33mWARNING[0m | [ ] Line exceeds 120 characters; contains 129
      |         |     characters
- 177 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 178 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 9
- 189 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 190 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 13
- 191 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 192 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 17
- 194 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
+ 195 | [31mERROR[0m   | [x] Expected 1 space after closing parenthesis;
      |         |     found 21
- 198 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 199 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 199 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 200 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 204 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 205 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 205 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 206 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
- 215 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
+ 216 | [31mERROR[0m   | [x] Expected 1 space after closing brace; newline
      |         |     found
- 216 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
+ 217 | [31mERROR[0m   | [x] Expected 1 space after ELSE keyword; newline
      |         |     found
 ----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 20 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...gh.vrt/vendor/hive/locator/source/Exception/IncompleteLegend.php[0m
+[1mFILE: ...or.dev/vendor/hive/locator/source/Exception/IncompleteLegend.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
 ----------------------------------------------------------------------
@@ -168,7 +168,7 @@ Time: 406ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...ough.vrt/vendor/hive/locator/source/Exception/InstanceExists.php[0m
+[1mFILE: ...ndor.dev/vendor/hive/locator/source/Exception/InstanceExists.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
 ----------------------------------------------------------------------
@@ -176,14 +176,14 @@ Time: 406ms; Memory: 7.25Mb
 ----------------------------------------------------------------------
 
 
-[1mFILE: ...rough.vrt/vendor/hive/locator/source/Exception/InvalidDriver.php[0m
+[1mFILE: ...endor.dev/vendor/hive/locator/source/Exception/InvalidDriver.php[0m
 ----------------------------------------------------------------------
 [1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
 ----------------------------------------------------------------------
  26 | [33mWARNING[0m | Line exceeds 120 characters; contains 124 characters
 ----------------------------------------------------------------------
 
-Time: 406ms; Memory: 7.25Mb
+Time: 361ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER VIOLATION SOURCE SUMMARY[0m
@@ -200,16 +200,16 @@ Time: 406ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (42 VIOLATIONS IN TOTAL)[0m
 ----------------------------------------------------------------------
 
-Time: 406ms; Memory: 7.25Mb
+Time: 361ms; Memory: 7.25Mb
 
 
 [1mPHP CODE SNIFFER REPORT SUMMARY[0m
 ----------------------------------------------------------------------
 [1mFILE                                                  ERRORS  WARNINGS[0m
 ----------------------------------------------------------------------
-...rough.vrt/vendor/hive/locator/source/Instance.php  [31m10[0m      0
-...orough.vrt/vendor/hive/locator/source/Library.php  [31m12[0m      [33m1[0m
-...borough.vrt/vendor/hive/locator/source/Object.php  [31m20[0m      [33m4[0m
+...endor.dev/vendor/hive/locator/source/Instance.php  [31m10[0m      0
+...vendor.dev/vendor/hive/locator/source/Library.php  [31m12[0m      [33m1[0m
+.../vendor.dev/vendor/hive/locator/source/Object.php  [31m20[0m      [33m4[0m
 ...ive/locator/source/Exception/IncompleteLegend.php  0       [33m1[0m
 .../hive/locator/source/Exception/InstanceExists.php  0       [33m1[0m
 ...r/hive/locator/source/Exception/InvalidDriver.php  0       [33m1[0m
@@ -219,5 +219,5 @@ Time: 406ms; Memory: 7.25Mb
 [1mPHPCBF CAN FIX 42 OF THESE SNIFF VIOLATIONS AUTOMATICALLY[0m
 ----------------------------------------------------------------------
 
-Time: 407ms; Memory: 7.25Mb
+Time: 361ms; Memory: 7.25Mb
 

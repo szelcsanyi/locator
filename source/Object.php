@@ -105,7 +105,6 @@ class Object extends Library implements Contract\Object
             // If we have a value
             if ($value = $this->magic($name))
             {
-
                 // If there was an argument sent in, compare the values.
                 if (isset($arguments[0]))
                 {
@@ -134,7 +133,6 @@ class Object extends Library implements Contract\Object
         // Make sure we have a result
         if ($this->status)
         {
-
             // If the current property is set and the called property, return the current result.
             if (in_array($name, $this->config['current']))
             {
@@ -150,7 +148,6 @@ class Object extends Library implements Contract\Object
             // Return the current item directly by a call to its alias
             if (in_array($name, array_keys($this->config['aliases'])))
             {
-
                 // Find what legend we are looking for from the alias
                 $legend = $this->config['aliases'][$name];
                 return $this->result[$legend];

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Driver\Simple" namespace="Hive\Locator\Driver" name="Simple" abstract="false" final="false" start="17" end="32">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Driver" file="Simple.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Driver/Simple.php" size="887" time="2018-05-03T14:57:51+11:00" unixtime="1525319871" sha1="34f283bf7ba332283c7d5cf709cbafc8650790c6" relative="Driver/Simple.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source/Driver" file="Simple.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Driver/Simple.php" size="887" time="2019-04-15T14:26:02+11:00" unixtime="1555298762" sha1="34f283bf7ba332283c7d5cf709cbafc8650790c6" relative="Driver/Simple.php"/>
   <docblock>
     <description compact="Simple Locator Library Driver.">Handles a comparison for the locator library,
 by doing a case insensitive, whitespace insensitive comparision.</description>
@@ -25,8 +25,8 @@ by doing a case insensitive, whitespace insensitive comparision.</description>
   </method>
   <interface full="Hive\Locator\Contract\Driver" namespace="Hive\Locator\Contract" name="Driver">
     <method name="compare" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
-    <parameter name="subject" byreference="false" type="{unknown}"/>
-    <parameter name="examine" byreference="false" type="{unknown}"/>
-  </method>
+      <parameter name="subject" byreference="false" type="{unknown}"/>
+      <parameter name="examine" byreference="false" type="{unknown}"/>
+    </method>
   </interface>
 </class>

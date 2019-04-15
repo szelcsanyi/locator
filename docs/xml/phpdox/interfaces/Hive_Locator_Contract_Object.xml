@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Contract\Object" namespace="Hive\Locator\Contract" name="Object" abstract="false" final="false" start="16" end="19">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Contract/Object.php" size="390" time="2018-04-05T14:37:42+11:00" unixtime="1522899462" sha1="be5acfc1c0d2b1efdb7d08afbc50c2f92ae7479a" relative="Contract/Object.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source/Contract" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Contract/Object.php" size="390" time="2019-04-15T14:26:02+11:00" unixtime="1555298762" sha1="be5acfc1c0d2b1efdb7d08afbc50c2f92ae7479a" relative="Contract/Object.php"/>
   <docblock>
     <description compact="Object Interface.">Interface for the object class used as a contract.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -13,7 +13,7 @@
   <implementors>
     <class full="Hive\Locator\Instance" namespace="Hive\Locator" name="Instance"/>
     <class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
-  <class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/><class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/><class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/></implementors>
+  <class full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/></implementors>
   <parent full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library">
     <method name="resolve" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
       <docblock>
