@@ -22,7 +22,7 @@ class Instance extends Object implements Contract\Instance
 
     public function __construct($name, array $map, array $config = [])
     {
-        if( ! isset(self::$objects[$name]))
+        if(! isset(self::$objects[$name]))
         {
             parent::__construct($map, $config);
             self::$objects[$name] = $this;

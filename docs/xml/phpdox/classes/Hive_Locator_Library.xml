@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Library" namespace="Hive\Locator" name="Library" abstract="false" final="false" start="19" end="183">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Library.php" size="5643" time="2018-05-03T15:02:45+11:00" unixtime="1525320165" sha1="1c3d1df52f617244603da59cfb56299480731b22" relative="Library.php"/>
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source" file="Library.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Library.php" size="5643" time="2019-04-15T14:26:02+11:00" unixtime="1555298762" sha1="1c3d1df52f617244603da59cfb56299480731b22" relative="Library.php"/>
   <docblock>
     <description compact="Locator Library.">The actual Locator library, which does the core operations.</description>
     <author value="Jamie Peake &lt;jamie.peake@gmail.com&gt;"/>
@@ -112,6 +112,10 @@
       <comment value="these are not the androids you are looking for." line="180"/>
     </inline>
   </method>
+  <extenders>
+    <extender full="Hive\Locator\Instance" namespace="Hive\Locator" name="Instance"/>
+    <extender full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
+  </extenders>
   <interface full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library">
     <method name="resolve" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
       <docblock>
@@ -124,7 +128,4 @@
       <parameter name="subject" byreference="false" type="{unknown}"/>
     </method>
   </interface>
-  <extenders>
-    <extender full="Hive\Locator\Object" namespace="Hive\Locator" name="Object"/>
-  </extenders>
 </class>

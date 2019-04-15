@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Object" namespace="Hive\Locator" name="Object" abstract="false" final="false" start="17" end="222">
-  <file path="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/build/../source" file="Object.php" realpath="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source/Object.php" size="7375" time="2018-05-03T15:05:02+11:00" unixtime="1525320302" sha1="97df5ecb81396d678d6bdf062bbcf31b983e3299" relative="Object.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Hive\Locator\Object" namespace="Hive\Locator" name="Object" abstract="false" final="false" start="17" end="223">
+  <file path="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/build/../source" file="Object.php" realpath="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source/Object.php" size="7378" time="2019-04-15T16:27:50+11:00" unixtime="1555306070" sha1="f8a51508489d6730e96f70f3d1920a8de89ec7f8" relative="Object.php"/>
   <docblock>
     <description compact="Object Library.">Allows access to the library through an object and adds the ability to call aliases, legends and current.
 Which can be called either through properties or methods. Also adds the ability to access other items with in the map.</description>
@@ -12,7 +12,7 @@ Which can be called either through properties or methods. Also adds the ability 
   </docblock>
   <extends full="Hive\Locator\Library" namespace="Hive\Locator" name="Library"/>
   <implements full="Hive\Locator\Contract\Object" namespace="Hive\Locator\Contract" name="Object"/>
-  <member name="config" type="array" default="" visibility="private" static="false" line="31">
+  <member name="config" default="" type="array" visibility="protected" static="false" line="31">
     <docblock>
       <description compact="Default configuration settings."/>
       <var description="config default object configuration for the library." type="array"/>
@@ -54,7 +54,7 @@ depending on config, it can allow access via the legend, current or alias.</desc
       <comment value="Throw a Bad Method call as the method wasn't found." line="79"/>
     </inline>
   </method>
-  <method name="__call" start="99" end="119" abstract="false" final="false" static="false" visibility="public">
+  <method name="__call" start="99" end="120" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Will allow access to the result through a method call.">Allows access to the result through a method call on the object, depending on the config.
 It can allow access via the legend, current or alias. To enable, ensure that 'method is with in Config['access'].
@@ -75,11 +75,11 @@ If an argument is sent to, it will compare the argument with the result and retu
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="arguments" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="If magic methods are turned on" line="101"/>
-      <comment value="Throw a Bad Method call as the method wasn't found." line="117"/>
+      <comment value="If magic methods are turned on" line="102"/>
+      <comment value="Throw a Bad Method call as the method wasn't found." line="118"/>
     </inline>
   </method>
-  <method name="magic" start="130" end="162" abstract="false" final="false" static="false" visibility="private">
+  <method name="magic" start="131" end="163" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Method used to find items from their legend, alias or current."/>
       <param variable="$name"/>
@@ -92,10 +92,10 @@ If an argument is sent to, it will compare the argument with the result and retu
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
     <inline>
-      <comment value="Make sure we have a result" line="132"/>
+      <comment value="Make sure we have a result" line="133"/>
     </inline>
   </method>
-  <method name="get" start="174" end="221" abstract="false" final="false" static="false" visibility="public">
+  <method name="get" start="175" end="222" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Will get the value of items other then the current.">Does a fuzzy search, based upon the parameters, any which are sent in as config['current'] it will use the current result.</description>
       <return type="object">
@@ -109,9 +109,12 @@ If an argument is sent to, it will compare the argument with the result and retu
       </throws>
     </docblock>
     <inline>
-      <comment value="Make sure we have a result" line="176"/>
+      <comment value="Make sure we have a result" line="177"/>
     </inline>
   </method>
+  <extenders>
+    <extender full="Hive\Locator\Instance" namespace="Hive\Locator" name="Instance"/>
+  </extenders>
   <parent full="Hive\Locator\Library" namespace="Hive\Locator" name="Library">
     <implements full="Hive\Locator\Contract\Library" namespace="Hive\Locator\Contract" name="Library"/>
     <constant type="{unknown}" name="DRIVER_CONTRACT" value="'Hive\Locator\Contract\Driver'">

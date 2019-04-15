@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
-  <project name="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source">
+  <project name="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source">
     <tests/>
-    <directory name="/usr/local/zend/var/apps/http/marketing.gainsborough.vrt/vendor/hive/locator/source">
+    <directory name="/usr/local/zend/var/apps/http/vendor.dev/vendor/hive/locator/source">
       <totals>
-        <lines total="1120" comments="675" code="445" executable="230" executed="0" percent="0.00%"/>
+        <lines total="1118" comments="675" code="443" executable="230" executed="0" percent="0.00%"/>
         <methods count="26" tested="0" percent="0.00%"/>
         <functions count="0" tested="0" percent=""/>
         <classes count="16" tested="0" percent="0.00%"/>
@@ -336,7 +336,7 @@
       </file>
       <file name="Instance.php" href="Instance.php.xml">
         <totals>
-          <lines total="94" comments="38" code="56" executable="35" executed="0" percent="0.00%"/>
+          <lines total="91" comments="38" code="53" executable="35" executed="0" percent="0.00%"/>
           <methods count="4" tested="0" percent="0.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>
@@ -354,7 +354,7 @@
       </file>
       <file name="Object.php" href="Object.php.xml">
         <totals>
-          <lines total="222" comments="119" code="103" executable="84" executed="0" percent="0.00%"/>
+          <lines total="223" comments="119" code="104" executable="84" executed="0" percent="0.00%"/>
           <methods count="5" tested="0" percent="0.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="0" percent="0.00%"/>
