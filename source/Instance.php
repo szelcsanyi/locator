@@ -5,7 +5,11 @@
  *
  * Allows access to the Locator through itself, and the ability to save an instance, for later use.
  *
- * @todo This isn't an instance, its something else altogether.
+ * @todo    This isn't an instance, its something else altogether. While is is storing a link to the singlton register
+ *          each of the items must be constructed before we are able to access them.
+ *
+ * @todo    This might require a complete re-write to remove the quirky behaviour. 
+ *
  *
  * @author        Jamie Peake <jamie.peake@gmail.com>
  * @licence https://github.com/hive/locator/blob/master/LICENSE (BSD-3-Clause)
@@ -20,6 +24,18 @@ class Instance extends Object implements Contract\Instance
     private static $objects;
 
 
+    /**
+     * Instance constructor.
+     *
+     * Thats right this instance has a non-static constructor. This was added for syntax sugar. 
+     * 
+     * $environment = new Locator\Instance('benchmark', $map); 
+     *
+     * @param $name
+     * @param array $map
+     * @param array $config
+     * @throws Exception\InstanceExists
+     */
     public function __construct($name, array $map, array $config = [])
     {
         if( ! isset(self::$objects[$name]))
@@ -37,6 +53,8 @@ class Instance extends Object implements Contract\Instance
     /**
      * Old Fashioned way to access the object.
      *
+     * @depreciated the prefered method is via the callStatic.
+     *
      * @param $name
      *
      * @return mixed
@@ -44,14 +62,7 @@ class Instance extends Object implements Contract\Instance
      */
     public static function init($name)
     {
-        if (isset(self::$objects[$name]))
-        {
-            return self::$objects[$name];
-        }
-        else
-        {
-            throw new Exception\InstanceDoesNotExist($name);
-        }
+        return self::$name();
     }
 
 
@@ -79,6 +90,7 @@ class Instance extends Object implements Contract\Instance
 
     /**
      * Get access to an object through a static call.
+     *
      * @param $name
      * @param $params
      *
@@ -86,6 +98,15 @@ class Instance extends Object implements Contract\Instance
      */
     public static function __callStatic($name, $params)
     {
-        return self::init($name);
+
+        if (isset(self::$objects[$name]))
+        {
+            return self::$objects[$name];
+        }
+        else
+        {
+            throw new Exception\InstanceDoesNotExist($name);
+        }
     }
+
 }
