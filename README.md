@@ -126,10 +126,10 @@ The code is split up into the following classes :
 
 Further to this how items in the array our found is by using drivers located in the [source/Driver](source/Driver) folder, currently supported is :
 
-1. [Simple.php](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparision.
-2. [Strict.php](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparision.
-3. [Domain.php](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparision removing any inconsistencies, ie. www.
-4. [Expression.php](source/Driver/Expression.php) :  Does a regular expression comparision.
+1. [Simple.php](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparison.
+2. [Strict.php](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparison.
+3. [Domain.php](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparison removing any inconsistencies, ie. www.
+4. [Expression.php](source/Driver/Expression.php) :  Does a regular expression comparison.
 
 
 ## Useage
@@ -275,10 +275,10 @@ The code is split up into the following classes :
         * [UndefinedProperty](source/Exception/UndefinedProperty.php)
         * [UnresolvedLegend](source/Exception/UnresolvedLegend.php)
     5. Driver : folder for any drivers for comparing
-        * [Simple](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparision.
-        * [Strict](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparision.
-        * [Domain](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparision removing any inconsistencies, ie. www.
-        * [Expression](source/Driver/Expression.php) :  Does a regular expression comparision.
+        * [Simple](source/Driver/Simple.php) : Does a simple (case insensitive, whitespace insensitive) comparison.
+        * [Strict](source/Driver/Strict.php) : Does a strict (case, space and type sensitive) comparison.
+        * [Domain](source/Driver/Domain.php) : Does a strict (case, space and type sensitive) comparison removing any inconsistencies, ie. www.
+        * [Expression](source/Driver/Expression.php) :  Does a regular expression comparison.
     6. Contract : folder for any interfaces or abstract classes they implement
         * [Library](source/Contract/Library.php)
         * [Object](source/Contract/Object.php)
